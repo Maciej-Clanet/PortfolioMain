@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/cv.css">
 
-    
+
     <script src="scripts/cv.js" defer></script>
     <script src="./scripts/navigation.js" defer></script>
 
@@ -63,6 +63,8 @@
     </header>
 
     <main id="main-container">
+        <div id="main-content">
+        
         <div id="cv-banner-container">
             <div id="cv-banner">
                 <img id="cv-banner-image" src="./assets/profile_image_large.png" />
@@ -127,6 +129,7 @@
             </div>
         </div>
 
+        <!--EXPERIENCE-->
         <div id="cv-details-container">
             <div class="cv-list-container">
                 <div class="cv-list-header">
@@ -134,9 +137,11 @@
                     <h2 class="heading-text">Experience</h2>
                 </div>
                 <div class="cv-list">
-                    <div class="cv-entries">
+                    <div id="exp-entries" class="cv-entries">
                         <div id="cv-pos" class="cv-entry active" onclick="changeEntryDescription('cv-pos')">
-                            <div class="cv-years heading-text">2023 - Current</div>
+                            <div class="cv-years heading-text">
+                                <span class="year-start">2023</span> <span class="year-dash">-</span> <span
+                                class="year-end">Current</span></div>
                             <div class="cv-details">
                                 <div>
                                     <h2 class="heading-text">Part Owner of POSperity Software</h2>
@@ -145,7 +150,8 @@
                             </div>
                         </div>
                         <div id="cv-lecturer-uxb" class="cv-entry" onclick="changeEntryDescription('cv-lecturer-uxb')">
-                            <div class="cv-years heading-text">2022 - Current</div>
+                            <div class="cv-years heading-text"><span class="year-start">2022</span> <span class="year-dash">-</span> <span
+                                class="year-end">Current</span></div>
                             <div class="cv-details">
                                 <div>
                                     <h2 class="heading-text">Computing Lecturer at HRUC</h2>
@@ -154,7 +160,8 @@
                             </div>
                         </div>
                         <div id="cv-pod" class="cv-entry" onclick="changeEntryDescription('cv-pod')"">
-                        <div class=" cv-years heading-text">2018 - Current</div>
+                        <div class=" cv-years heading-text"><span class="year-start">2018</span> <span class="year-dash">-</span> <span
+                            class="year-end">Current</span></div>
                         <div class="cv-details">
                             <div>
                                 <h2 class="heading-text">Print On Demand Business</h2>
@@ -163,7 +170,8 @@
                         </div>
                     </div>
                     <div id="cv-lecturer-hayes" class="cv-entry" onclick="changeEntryDescription('cv-lecturer-hayes')">
-                        <div class="cv-years heading-text">2017 - 2017</div>
+                        <div class="cv-years heading-text"><span class="year-start">2017</span> <span class="year-dash">-</span> <span
+                            class="year-end">2017</span></div>
                         <div class="cv-details">
                             <div>
                                 <h2 class="heading-text">Computing Lecturer at Hayes College</h2>
@@ -185,7 +193,8 @@
             </div>
         </div>
 
-        <!-- <div class="cv-list-container">
+        <!--EDUCATION-->
+        <div class="cv-list-container">
             <div class="cv-list-header">
                 <img src="assets/icons/lightbulb.svg" alt="Education Icon" />
                 <h2 class="heading-text">Education</h2>
@@ -193,7 +202,10 @@
             <div class="cv-list">
                 <div class="cv-entries">
                     <div id="cv-uxb-college" class="cv-entry">
-                        <div class="cv-years heading-text">2012 - 2016</div>
+                        <div class="cv-years heading-text">
+                            <span class="year-start">2012</span> <span class="year-dash">-</span> <span
+                                class="year-end">2016</span><br><span class="small-text">Uxbridge College</span>
+                        </div>
                         <div class="cv-details">
                             <div>
                                 <h2 class="heading-text">HND L5 Extended Diploma in Games and Software Development</h2>
@@ -206,10 +218,13 @@
                         </div>
                     </div>
                     <div id="cv-beechwood" class="cv-entry">
-                        <div class="cv-years heading-text">2007 - 2012</div>
+                        <div class="cv-years heading-text"><span class="year-start">2007</span> <span class="year-dash">-</span> <span
+                                class="year-end">2012</span><br><span class="small-text">Beechwood School</span>
+
+                        </div>
                         <div class="cv-details">
                             <div>
-                                <h2 class="heading-text">Beechwood School</h2>
+                                <h2 class="heading-text">GCSE's</h2>
                                 <h3 class="small-text">Maths: A English: C</h3>
                             </div>
                         </div>
@@ -219,6 +234,7 @@
             </div>
         </div>
 
+        <!--STAY IN TOUCH-->
         <div class="cv-list-container">
             <div class="cv-list-header">
                 <img src="assets/icons/speech_bubble.svg" alt="Conact Icon" />
@@ -235,21 +251,22 @@
 
                 <div id="cv-email-buttons">
                     <button id="compose-button">
-                        <img src="assets/icons/compose.svg" alt="compose email icon"/>
+                        <img src="assets/icons/compose.svg" alt="compose email icon" />
                         <span class="small-text">Compose</span>
                     </button>
                     <button id="copy-button">
-                        <img src="assets/icons/copy.svg" alt="copy email icon"/>
+                        <img src="assets/icons/copy.svg" alt="copy email icon" />
                         <span class="small-text">Copy</span>
                     </button>
 
                 </div>
             </div>
-        </div> -->
-
         </div>
 
+        </div>
+    
 
+    </div>
     </main>
 </body>
 

@@ -285,7 +285,7 @@
 
 
 /* CV Table */
-@media (max-width: 750px){
+@media (max-width: 800px){
 
     #cv-skills-table-container{
         border-radius: 0px;
@@ -363,11 +363,77 @@
     .cv-years{
         font-size: 16px;
         min-width: 105px;
+        width: 105px;
     }
     .cv-details div .heading-text{
         font-size: 16px;
     }
     .cv-details div .small-text{
         font-size: 12px;
+    }
+}
+
+@media (max-width: 950px){
+    .cv-list{
+        flex-direction: column;
+    }
+    #cv-entry-description{
+        border-left: none;
+        border-top: 1px solid var(--text-col-dark);
+        padding-top: 8px;
+    }
+
+   
+
+    .cv-details{
+        justify-content: center;
+    }
+    .cv-entry{
+        border-radius: 8px;
+    }
+    #exp-entries .cv-entry:last-of-type{
+        border-radius: 8px 8px 0px 0px;
+    }
+}
+@media (max-width: 700px){
+    .cv-years{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 70px;
+        width: 70px;
+        gap: 2px;
+        text-align: center;
+    }
+    .year-dash{
+        visibility: hidden;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        &:before{
+            content : "↓";
+            visibility: visible;
+        }
+    }
+}
+
+/* contact buttons */
+@media (max-width: 400px){
+    #cv-email-container{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        max-width: 100%;
+    }
+    #cv-email-buttons{
+        flex-direction: column;
+    }
+    #compose-button{
+        border-bottom: none;
+        border-radius: 4px 4px 0px 0px;
+    }
+    #copy-button{
+        border: 1px solid var(--text-col-dark);
+        border-radius: 0px 0px 4px 4px;
     }
 }
