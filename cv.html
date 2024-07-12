@@ -12,6 +12,7 @@
 
     <script src="scripts/cv.js" defer></script>
     <script src="./scripts/navigation.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
 
 </head>
 
@@ -65,29 +66,29 @@
     <main id="main-container">
         <div id="main-content">
         
-        <div id="cv-banner-container">
+        <section id="cv-banner-container">
             <div id="cv-banner">
-                <img id="cv-banner-image" src="./assets/profile_image_large.png" />
+                <img id="cv-banner-image" src="./assets/profile_image_large.png"  alt="Profile image of Maciej Clanet"/>
                 <div id="cv-banner-content">
-                    <span id="cv-banner-name">Maciej Clanet</span>
-                    <span id="cv-banner-role">Full Stack Developer</span>
+                    <h1 id="cv-banner-name">Maciej Clanet</h1>
+                    <h2 id="cv-banner-role">Full Stack Developer</h2>
                     <a href="./home.html" class="glass-button">See portfolio →</a>
                 </div>
             </div>
-            <div class="paragraph-text">
+            <p class="paragraph-text">
                 I possess extensive experience across a variety of technology stacks.<br>
                 My background in teaching programming has enabled me to establish a strong foundation in software
                 development principles.<br>
                 The majority of my experience derives from my role at a startup over the past year, where I have been
                 developing point-of-sale software for restaurants.
-            </div>
-        </div>
+            </p>
+        </section>
 
 
-        <div id="cv-skills-table-container">
+        <section id="cv-skills-table-container" role="table">
 
-            <div class="cv-skills-table-row">
-                <div class="skillbox main">
+            <div class="cv-skills-table-row" role="row">
+                <div class="skillbox main" role="cell">
                     <h2 class="heading-text">Back-End</h2>
                     <ul>
                         <li>Rust</li>
@@ -95,7 +96,7 @@
                         <li>Jinja2</li>
                     </ul>
                 </div>
-                <div class="skillbox main">
+                <div class="skillbox main" role="cell">
                     <h2 class="heading-text">Front-End</h2>
                     <ul>
                         <li>React</li>
@@ -104,22 +105,22 @@
                     </ul>
                 </div>
             </div>
-            <div class="cv-skills-table-row">
-                <div class="skillbox">
+            <div class="cv-skills-table-row" role="row">
+                <div class="skillbox" role="cell">
                     <h2 class="heading-text">Databases</h2>
                     <ul>
                         <li>SQL</li>
                         <li>Indradb</li>
                     </ul>
                 </div>
-                <div class="skillbox">
+                <div class="skillbox" role="cell">
                     <h2 class="heading-text">CSS</h2>
                     <ul>
                         <li>Bootstrap</li>
                         <li>Scss</li>
                     </ul>
                 </div>
-                <div class="skillbox">
+                <div class="skillbox" role="cell">
                     <h2 class="heading-text">Other</h2>
                     <ul>
                         <li>Websockets</li>
@@ -127,58 +128,59 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!--EXPERIENCE-->
-        <div id="cv-details-container">
+        <section id="cv-details-container">
+
+            <!--EXPERIENCE-->
             <div class="cv-list-container">
-                <div class="cv-list-header">
+                <header class="cv-list-header">
                     <img src="assets/icons/star.svg" alt="Experience Icon" />
                     <h2 class="heading-text">Experience</h2>
-                </div>
+                </header>
                 <div class="cv-list">
                     <div id="exp-entries" class="cv-entries">
-                        <div id="cv-pos" class="cv-entry active" onclick="changeEntryDescription('cv-pos')">
+                        <article id="cv-pos" class="cv-entry active" tabindex="0" onclick="changeEntryDescription('cv-pos')" aria-labelledby="cv-pos-title">
                             <div class="cv-years heading-text">
-                                <span class="year-start">2023</span> <span class="year-dash">-</span> <span
-                                class="year-end">Current</span></div>
+                                <time datetime="2023" class="year-start">2023</time> <span class="year-dash">-</span> <time datetime="2024"
+                                class="year-end">Current</time></div>
                             <div class="cv-details">
                                 <div>
-                                    <h2 class="heading-text">Part Owner of POSperity Software</h2>
-                                    <h3 class="small-text">London</h3>
+                                    <h3 id="cv-pos-title" class="heading-text">Part Owner of POSperity Software</h3>
+                                    <p class="small-text">London</p>
                                 </div>
                             </div>
-                        </div>
-                        <div id="cv-lecturer-uxb" class="cv-entry" onclick="changeEntryDescription('cv-lecturer-uxb')">
-                            <div class="cv-years heading-text"><span class="year-start">2022</span> <span class="year-dash">-</span> <span
-                                class="year-end">Current</span></div>
+                        </article>
+                        <article id="cv-lecturer-uxb" class="cv-entry" tabindex="0" onclick="changeEntryDescription('cv-lecturer-uxb')" aria-labelledby="cv-lecturer-uxb-title">
+                            <div class="cv-years heading-text"><time datetime="2022" class="year-start">2022</time> <span class="year-dash">-</span> <time datetime="2024"
+                                class="year-end">Current</time></div>
                             <div class="cv-details">
                                 <div>
-                                    <h2 class="heading-text">Computing Lecturer at HRUC</h2>
-                                    <h3 class="small-text">Uxbridge</h3>
+                                    <h3 id="cv-lecturer-uxb-title" class="heading-text">Computing Lecturer at HRUC</h3>
+                                    <p class="small-text">Uxbridge</p>
                                 </div>
                             </div>
-                        </div>
-                        <div id="cv-pod" class="cv-entry" onclick="changeEntryDescription('cv-pod')"">
-                        <div class=" cv-years heading-text"><span class="year-start">2018</span> <span class="year-dash">-</span> <span
-                            class="year-end">Current</span></div>
+                        </article>
+                        <article id="cv-pod" class="cv-entry" tabindex="0" onclick="changeEntryDescription('cv-pod')"  aria-labelledby="cv-pod-title">
+                        <div class=" cv-years heading-text"><time datetime="2018" class="year-start">2018</time> <span class="year-dash">-</span> <time datetime="2024"
+                            class="year-end">Current</time></div>
                         <div class="cv-details">
                             <div>
-                                <h2 class="heading-text">Print On Demand Business</h2>
-                                <h3 class="small-text">Self Employed</h3>
+                                <h3 id="cv-pod-title" class="heading-text">Print On Demand Business</h3>
+                                <p class="small-text">Self Employed</p>
                             </div>
                         </div>
-                    </div>
-                    <div id="cv-lecturer-hayes" class="cv-entry" onclick="changeEntryDescription('cv-lecturer-hayes')">
-                        <div class="cv-years heading-text"><span class="year-start">2017</span> <span class="year-dash">-</span> <span
-                            class="year-end">2017</span></div>
+                        </article>
+                        <article id="cv-lecturer-hayes" class="cv-entry"  tabindex="0" onclick="changeEntryDescription('cv-lecturer-hayes')" aria-labelledby="cv-lecturer-hayes-title">
+                        <div class="cv-years heading-text"><time datetime="2017" class="year-start">2017</time> <span class="year-dash">-</span> <time datetime="2017"
+                            class="year-end">2017</time></div>
                         <div class="cv-details">
                             <div>
-                                <h2 class="heading-text">Computing Lecturer at Hayes College</h2>
+                                <h2 id="cv-lecturer-hayes-title" class="heading-text">Computing Lecturer at Hayes College</h2>
                                 <h3 class="small-text">Hayes</h3>
                             </div>
                         </div>
-                    </div>
+                        </article>
                 </div>
                 <div id="cv-entry-description">
                     <h2 class="heading-text">POSperity Software</h2>
@@ -190,80 +192,84 @@
 
                         Read more about the POS here → </p>
                 </div>
+                </div>
             </div>
-        </div>
 
-        <!--EDUCATION-->
-        <div class="cv-list-container">
-            <div class="cv-list-header">
-                <img src="assets/icons/lightbulb.svg" alt="Education Icon" />
-                <h2 class="heading-text">Education</h2>
-            </div>
-            <div class="cv-list">
-                <div class="cv-entries">
-                    <div id="cv-uxb-college" class="cv-entry">
-                        <div class="cv-years heading-text">
-                            <span class="year-start">2012</span> <span class="year-dash">-</span> <span
-                                class="year-end">2016</span><br><span class="small-text">Uxbridge College</span>
-                        </div>
-                        <div class="cv-details">
-                            <div>
-                                <h2 class="heading-text">HND L5 Extended Diploma in Games and Software Development</h2>
-                                <h3 class="small-text">Distinction</h3>
+            <!--EDUCATION-->
+            <div class="cv-list-container">
+                <header class="cv-list-header">
+                    <img src="assets/icons/lightbulb.svg" alt="Education Icon" />
+                    <h2 class="heading-text">Education</h2>
+                </header>
+                <div class="cv-list">
+                    <div class="cv-entries">
+                        <article id="cv-uxb-college" class="cv-entry" tabindex="0" aria-labelledby="cv-uxb-edu-title" >
+                            <div class="cv-years heading-text">
+                                <time datetime="2012" class="year-start">2012</time> <span class="year-dash">-</span> <time datetime="2016"
+                                    class="year-end">2016</time><br><span class="small-text">Uxbridge College</span>
                             </div>
-                            <div>
-                                <h2 class="heading-text">L3 Award in Education and Training</h2>
-                                <h3 class="small-text">Distinction</h3>
+                            <div class="cv-details">
+                                <div>
+                                    <h3 id="cv-uxb-edu-title" class="heading-text">HND L5 Extended Diploma in Games and Software Development</h3>
+                                    <p class="small-text">Distinction</p>
+                                </div>
+                                <div>
+                                    <h3 class="heading-text">L3 Award in Education and Training</h3>
+                                    <p class="small-text">Distinction</p>
+                                </div>
                             </div>
-                        </div>
+                        </article>
+                        <article id="cv-beechwood" tabindex="0" class="cv-entry" aria-labelledby="cv-beechwood-edu-title">
+                            <div class="cv-years heading-text"><time datetime="2007" class="year-start">2007</time> <span class="year-dash">-</span> <time datetime="2012"
+                                    class="year-end">2012</time><br><span class="small-text">Beechwood School</span>
+
+                            </div>
+                            <div class="cv-details">
+                                <div>
+                                    <h3 id="cv-beechwood-edu-title" class="heading-text">GCSE's</h3>
+                                    <p class="small-text">Maths: A English: C</p>
+                                </div>
+                            </div>
+                        </article>
+
                     </div>
-                    <div id="cv-beechwood" class="cv-entry">
-                        <div class="cv-years heading-text"><span class="year-start">2007</span> <span class="year-dash">-</span> <span
-                                class="year-end">2012</span><br><span class="small-text">Beechwood School</span>
+                </div>
+            </div>
 
-                        </div>
-                        <div class="cv-details">
-                            <div>
-                                <h2 class="heading-text">GCSE's</h2>
-                                <h3 class="small-text">Maths: A English: C</h3>
-                            </div>
-                        </div>
+            <!--STAY IN TOUCH-->
+            <section class="cv-list-container">
+                <header class="cv-list-header">
+                    <img src="assets/icons/speech_bubble.svg" alt="Conact Icon" />
+                    <h2 class="heading-text">Stay In Touch</h2>
+                </header>
+
+                <div id="cv-contact-box">
+                    <div class="cv-column">
+                    <h2 class="heading-text">Looking to hire?</h2>
+
+                    <div id="cv-email-container">
+                        <span class="small-text">Email</span>
+                        <span id="email-text" class="small-text">maciejclanet@gmail.com</span>
                     </div>
 
+                    <div id="cv-email-buttons">
+                        <button id="compose-button" aria-label="Compose email">
+                            <img src="assets/icons/compose.svg" alt="compose email icon" />
+                            <span class="small-text">Compose</span>
+                        </button>
+                        <button id="copy-button"  aria-label="Copy email address">
+                            <img src="assets/icons/copy.svg" alt="copy email icon" />
+                            <span class="small-text">Copy</span>
+                        </button>
+
+                    </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
 
-        <!--STAY IN TOUCH-->
-        <div class="cv-list-container">
-            <div class="cv-list-header">
-                <img src="assets/icons/speech_bubble.svg" alt="Conact Icon" />
-                <h2 class="heading-text">Stay In Touch</h2>
-            </div>
+            <div id="notification-container"></div>
 
-            <div id="cv-contact-box">
-                <h2 class="heading-text">Looking to hire?</h2>
-
-                <div id="cv-email-container">
-                    <span class="small-text">Email</span>
-                    <span class="small-text">maciejclanet@gmail.com</span>
-                </div>
-
-                <div id="cv-email-buttons">
-                    <button id="compose-button">
-                        <img src="assets/icons/compose.svg" alt="compose email icon" />
-                        <span class="small-text">Compose</span>
-                    </button>
-                    <button id="copy-button">
-                        <img src="assets/icons/copy.svg" alt="copy email icon" />
-                        <span class="small-text">Copy</span>
-                    </button>
-
-                </div>
-            </div>
-        </div>
-
-        </div>
+        </section>
     
 
     </div>

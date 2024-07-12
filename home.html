@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/home.css">
 
     <script src="./scripts/navigation.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
 
 </head>
 
@@ -63,8 +64,178 @@
     <main id="main-container">
         <div id="main-content">
             <div id="banner">
-                
+                <div id="banner-main">
+                    <img id="banner-image" src="./assets/profile_image_large.png"
+                        alt="Profile photo of maciej clanet" />
+                    <h1 id="banner-text">Hello!</h1>
+                </div>
+                <div id="banner-main-text" class="small-text">
+                    My name is <b>Maciej</b> - Welcome to my portfolio. Have a look around!
+                </div>
             </div>
+
+            <section id="home-grid">
+                <div class="grid-item">My name is Maciej and I develop full stack applications. I love experimenting
+                    with new tech.<br><a href="./about.html">More about me →</a></div>
+                <div class="grid-item">Use keyboard shortcuts 1 → 6 to navigate between pages. Try press 2, 3, 4, then 1
+                    to come back here.</div>
+                <div class="grid-item">When I’m not teaching, I work on a startup and side projects.<br><a
+                        href="./development.html">Check them out here →</a></div>
+                <div class="grid-item">I also dabble in design using Figma.<br><a href="./design.html">See them here
+                        →</a></div>
+                <div class="grid-item">Just looking for my CV? <a href="./cv.html">Head over here →</a></div>
+                <div class="grid-item">Want to hire me for dev or design work? <a href="./contact.html">Get in touch
+                        →</a></div>
+            </section>
+
+            <div id="home-sections">
+                <section id="dev-projects-section" class="projects-section">
+                    <header id="dev-projects-header" class="home-section-header">
+                        <img class="home-section-header-image" src="./assets/icons/code.svg" alt="Development Icon" />
+                        <h2 class="home-section-header-text heading-text">Dev Projects</h2>
+                        <a href="./development.html" class="home-section-header-more small-text"
+                            aria-label="View all development projects">View All</a>
+                    </header>
+                    <div class="section-items">
+
+                        <a id="project-pos" href="./development/pos.html" class="project-thumbnail section-item-link">
+                            <div class="project-thumbnail-details">
+                                <h3 class="project-thumbnail-title heading-text">Point of Sale</h3>
+                                <p class="small-text">
+                                    Part Owner of a startup developing a fully featured POS aimed at restaurants.</p>
+                                <ul>
+                                    <li>Modern and easy to use UX</li>
+                                    <li>Automatic deal detection during order taking</li>
+                                    <li>Comprehensive reporting</li>
+                                    <li>Advanced menyu and deals builder</li>
+                                    <li>And so much more</li>
+                                </ul>
+                                <span class="small-text project-thumbnail-more">Read about my involvement here →</span>
+                            </div>
+                            <div class="project-thumbnail-image-container">
+                                <img id="pos-thumbnail-image" class="project-thumbnail-image"
+                                    src="./assets/posthumb.png" alt="Thumbnail of the point of sale startup" />
+                            </div>
+                        </a>
+
+
+                        <a href="./development/aifilters.html" id="project-ai-filters"
+                            class="project-thumbnail section-item-link">
+                            <div class="project-thumbnail-details">
+                                <h3 class="project-thumbnail-title heading-text">AI Filter App</h3>
+                                <p class="small-text">
+                                    Personal project, prototype of a ai filter app</p>
+                                <ul>
+                                    <li>Fully functional AI image processing</li>
+                                    <li>Easy to add further filters</li>
+                                    <li>Live queue updates through web sockets</li>
+                                    <li>Priority resource distribution between paid and free users</li>
+                                </ul>
+                                <span class="small-text project-thumbnail-more">Read more about it →</span>
+                            </div>
+                            <div class="project-thumbnail-image-container">
+                                <img id="ai-thumbnail-image" class="project-thumbnail-image"
+                                    src="./assets/aifilterthumb.png" alt="Thumbnail of the ai filter app project" />
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <section id="design-projects-section" class="projects-section">
+                    <header id="design-projects-header" class="home-section-header">
+                        <img class="home-section-header-image" src="./assets/icons/pencil.svg" alt="Design Icon" />
+                        <h2 class="home-section-header-text heading-text">Design Projects</h2>
+                        <a href="./design.html" class="home-section-header-more small-text"
+                            aria-label="View all design projects">View All</a>
+                    </header>
+                    <div class="section-items">
+                        <a href="./design/punkfluent.html" id="project-punkfluent" class="project-thumbnail section-item-link">
+
+                            <div class="project-thumbnail-details">
+                                <h3 class="project-thumbnail-title heading-text">PUNKFLUENT</h3>
+                                <p class="small-text">
+                                    A fashion brand I'm planning to develop selling t-shirts on Amazon.</p>
+                                <ul>
+                                    <li>xPunk and xWave aesthetic focus</li>
+                                    <li>Already validated and sold few designs through organic amazon traffic</li>
+                                </ul>
+                                <span class="small-text project-thumbnail-more">See full design →</span>
+                            </div>
+                            <div class="project-thumbnail-image-container">
+                                <img id="pos-thumbnail-image" class="project-thumbnail-image"
+                                    src="./assets/punkfluentthumb.png" alt="Thumbnail of the punkfluent brand design" />
+                            </div>
+                        </a>
+                        <a href="./design/kanban.html" class="project-thumbnail section-item-link">
+                            <div class="project-thumbnail-details">
+                                <h3 class="project-thumbnail-title heading-text">Kanban For Teams</h3>
+                                <p class="small-text">
+                                    Mock-up of a minimalist Kanban board app I'm planning to use as a learning project
+                                    for a new tech stack</p>
+                                <ul>
+                                    <li>Project organization</li>
+                                    <li>Collaborative</li>
+                                    <li>Minimal design doesn't get in the way of productivity</li>
+                                </ul>
+                                <span class="small-text project-thumbnail-more">See full design →</span>
+                            </div>
+                            <div class="project-thumbnail-image-container">
+                                <img id="ai-thumbnail-image" class="project-thumbnail-image"
+                                    src="./assets/kanbanthumb.png" alt="Thumbnail of the kanban app design" />
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <!--STAY IN TOUCH-->
+                <section id="design-projects-section" class="projects-section">
+                    <header id="contact-header" class="home-section-header">
+                        <img class="home-section-header-image" src="./assets/icons/speech_bubble.svg"
+                            alt="Contact Icon" />
+                        <h2 class="home-section-header-text heading-text">Stay In Touch</h2>
+                    </header>
+
+                    <div id="cv-contact-box">
+                        <div class="cv-column">
+                            <h2 class="heading-text">Looking to hire?</h2>
+
+                            <div id="cv-email-container">
+                                <span class="small-text">Email</span>
+                                <span id="email-text" class="small-text">maciejclanet@gmail.com</span>
+                            </div>
+
+                            <div id="cv-email-buttons">
+                                <button id="compose-button" aria-label="Compose email">
+                                    <img src="assets/icons/compose.svg" alt="compose email icon" />
+                                    <span class="small-text">Compose</span>
+                                </button>
+                                <button id="copy-button" aria-label="Copy email address">
+                                    <img src="assets/icons/copy.svg" alt="copy email icon" />
+                                    <span class="small-text">Copy</span>
+                                </button>
+
+                            </div>
+                        </div>
+                        <div class="cv-column">
+                            <h2 class="heading-text">Check out my CV</h2>
+
+                            <a href="cv.html" id="cv-button" aria-label="See CV">
+                                <img src="assets/icons/file2.svg" alt="CV icon" />
+                                <span class="small-text">CV</span>
+                            </a>
+
+
+                        </div>
+                    </div>
+                </section>
+
+                <div id="notification-container"></div>
+
+                </section>
+
+            </div>
+
+
         </div>
     </main>
 </body>
