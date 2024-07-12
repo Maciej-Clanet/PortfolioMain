@@ -224,6 +224,67 @@
     border-radius: 0px 4px 4px 0px;
 }
 
+/* Banner */
+@media (max-width: 950px){
+
+    #cv-banner-image{
+        width: 150px;
+        height: 150px;
+    }
+
+    #cv-banner-name{
+        font-size: 42px;
+    }
+    #cv-banner-role{
+        font-size: 28px;
+    }
+}
+@media (max-width: 630px){
+    #cv-banner{
+        align-items: center;
+    }
+    #cv-banner-content{
+        gap: 8px;
+        align-items: center;
+    }
+    #cv-banner-image{
+        width: 110px;
+        height: 110px;
+    }
+    #cv-banner-name{
+        font-size: 28px;
+    }
+    #cv-banner-role{
+        font-size: 18px;
+    }
+    .glass-button{
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 500px){
+    #cv-banner{
+        align-items: center;
+    }
+    #cv-banner{
+        flex-direction: column;
+    }
+    #cv-banner-image{
+        width: 110px;
+        height: 110px;
+    }
+    #cv-banner-name{
+        font-size: 28px;
+        text-align: center;
+    }
+    #cv-banner-role{
+        font-size: 18px;
+        text-align: center;
+    }
+}
+
+
+/* CV Table */
 @media (max-width: 750px){
 
     #cv-skills-table-container{
