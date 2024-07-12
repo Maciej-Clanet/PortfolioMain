@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/cv.css">
+
+    
+    <script src="scripts/cv.js" defer></script>
+    <script src="./scripts/navigation.js" defer></script>
+
+</head>
+
+<body>
+    <header id="side-bar-header">
+        <div id="header-profile-container">
+            <img id="header-profile-image" src="./assets/profile_image.png" alt="Profile image of Maciej Clanet" />
+            <span id="header-profile-label">Maciej Clanet</span>
+        </div>
+        <nav id="nav-button-groups-container" aria-label="Main Navigation">
+            <div class="nav-button-group">
+                <a href="./home.html" class="nav-button" title="Home">
+                    <img src="./assets/icons/home.svg" alt="home icon" />
+                    <span class="nav-button-label">Home</span>
+                    <span class="nav-button-key-label">1</span>
+                </a>
+                <a href="./about.html" class="nav-button">
+                    <img src="./assets/icons/person.svg" alt="about icon" title="About" />
+                    <span class="nav-button-label">About</span>
+                    <span class="nav-button-key-label">2</span>
+                </a>
+                <a href="./development.html" class="nav-button">
+                    <img src="./assets/icons/code.svg" alt="projects icon" title="Development Projects" />
+                    <span class="nav-button-label">Dev Projects</span>
+                    <span class="nav-button-key-label">3</span>
+                </a>
+                <a href="./design.html" class="nav-button">
+                    <img src="./assets/icons/pencil.svg" alt="design icon" title="Design Projects" />
+                    <span class="nav-button-label">Design Projects</span>
+                    <span class="nav-button-key-label">4</span>
+                </a>
+            </div>
+            <div class="nav-button-group">
+                <div class="nav-button-group-label">
+                    Stay In Touch
+                </div>
+                <a href="./cv.html" class="nav-button active" title="Cirriculum Vitae">
+                    <img src="./assets/icons/file.svg" alt="cv icon" />
+                    <span class="nav-button-label">CV</span>
+                    <span class="nav-button-key-label">5</span>
+                </a>
+                <a href="./contact.html" class="nav-button" title="Contact">
+                    <img src="./assets/icons/speech_bubble.svg" alt="contact icon" />
+                    <span class="nav-button-label">Contact</span>
+                    <span class="nav-button-key-label">6</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-container">
+        <div id="cv-banner-container">
+            <div id="cv-banner">
+                <img id="cv-banner-image" src="./assets/profile_image_large.png" />
+                <div id="cv-banner-content">
+                    <span id="cv-banner-name">Maciej Clanet</span>
+                    <span id="cv-banner-role">Full Stack Developer</span>
+                    <a href="./home.html" class="glass-button">See portfolio →</a>
+                </div>
+            </div>
+            <div class="paragraph-text">
+                I possess extensive experience across a variety of technology stacks.<br>
+                My background in teaching programming has enabled me to establish a strong foundation in software
+                development principles.<br>
+                The majority of my experience derives from my role at a startup over the past year, where I have been
+                developing point-of-sale software for restaurants.
+            </div>
+        </div>
+
+
+        <div id="cv-skills-table-container">
+
+            <div class="cv-skills-table-row">
+                <div class="skillbox main">
+                    <h2 class="heading-text">Back-End</h2>
+                    <ul>
+                        <li>Rust</li>
+                        <li>FastAPI</li>
+                        <li>Jinja2</li>
+                    </ul>
+                </div>
+                <div class="skillbox main">
+                    <h2 class="heading-text">Front-End</h2>
+                    <ul>
+                        <li>React</li>
+                        <li>Typescript</li>
+                        <li>HTMX</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cv-skills-table-row">
+                <div class="skillbox">
+                    <h2 class="heading-text">Databases</h2>
+                    <ul>
+                        <li>SQL</li>
+                        <li>Indradb</li>
+                    </ul>
+                </div>
+                <div class="skillbox">
+                    <h2 class="heading-text">CSS</h2>
+                    <ul>
+                        <li>Bootstrap</li>
+                        <li>Scss</li>
+                    </ul>
+                </div>
+                <div class="skillbox">
+                    <h2 class="heading-text">Other</h2>
+                    <ul>
+                        <li>Websockets</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="cv-details-container">
+            <div class="cv-list-container">
+                <div class="cv-list-header">
+                    <img src="assets/icons/star.svg" alt="Experience Icon" />
+                    <h2 class="heading-text">Experience</h2>
+                </div>
+                <div class="cv-list">
+                    <div class="cv-entries">
+                        <div id="cv-pos" class="cv-entry active" onclick="changeEntryDescription('cv-pos')">
+                            <div class="cv-years heading-text">2023 - Current</div>
+                            <div class="cv-details">
+                                <div>
+                                    <h2 class="heading-text">Part Owner of POSperity Software</h2>
+                                    <h3 class="small-text">London</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cv-lecturer-uxb" class="cv-entry" onclick="changeEntryDescription('cv-lecturer-uxb')">
+                            <div class="cv-years heading-text">2022 - Current</div>
+                            <div class="cv-details">
+                                <div>
+                                    <h2 class="heading-text">Computing Lecturer at HRUC</h2>
+                                    <h3 class="small-text">Uxbridge</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cv-pod" class="cv-entry" onclick="changeEntryDescription('cv-pod')"">
+                        <div class=" cv-years heading-text">2018 - Current</div>
+                        <div class="cv-details">
+                            <div>
+                                <h2 class="heading-text">Print On Demand Business</h2>
+                                <h3 class="small-text">Self Employed</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cv-lecturer-hayes" class="cv-entry" onclick="changeEntryDescription('cv-lecturer-hayes')">
+                        <div class="cv-years heading-text">2017 - 2017</div>
+                        <div class="cv-details">
+                            <div>
+                                <h2 class="heading-text">Computing Lecturer at Hayes College</h2>
+                                <h3 class="small-text">Hayes</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cv-entry-description">
+                    <h2 class="heading-text">POSperity Software</h2>
+                    <p class="paragraph-text">I’m a part owner of the startup and a full stack developer on our Point of
+                        Sale system designed for restaurants.<br><br>
+                        While my main responsibility is creating the back-end with Rust, I routinely work on the
+                        Front-end using Typescript and React.<br><br>
+                        I’m also the primary designer, responsible for all UI/UX of the application.<br><br>
+
+                        Read more about the POS here → </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cv-list-container">
+            <div class="cv-list-header">
+                <img src="assets/icons/lightbulb.svg" alt="Education Icon" />
+                <h2 class="heading-text">Education</h2>
+            </div>
+            <div class="cv-list">
+                <div class="cv-entries">
+                    <div id="cv-uxb-college" class="cv-entry">
+                        <div class="cv-years heading-text">2012 - 2016</div>
+                        <div class="cv-details">
+                            <div>
+                                <h2 class="heading-text">HND L5 Extended Diploma in Games and Software Development</h2>
+                                <h3 class="small-text">Distinction</h3>
+                            </div>
+                            <div>
+                                <h2 class="heading-text">L3 Award in Education and Training</h2>
+                                <h3 class="small-text">Distinction</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cv-beechwood" class="cv-entry">
+                        <div class="cv-years heading-text">2007 - 2012</div>
+                        <div class="cv-details">
+                            <div>
+                                <h2 class="heading-text">Beechwood School</h2>
+                                <h3 class="small-text">Maths: A English: C</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="cv-list-container">
+            <div class="cv-list-header">
+                <img src="assets/icons/speech_bubble.svg" alt="Conact Icon" />
+                <h2 class="heading-text">Stay In Touch</h2>
+            </div>
+
+            <div id="cv-contact-box">
+                <h2 class="heading-text">Looking to hire?</h2>
+
+                <div id="cv-email-container">
+                    <span class="small-text">Email</span>
+                    <span class="small-text">maciejclanet@gmail.com</span>
+                </div>
+
+                <div id="cv-email-buttons">
+                    <button id="compose-button">
+                        <img src="assets/icons/compose.svg" alt="compose email icon"/>
+                        <span class="small-text">Compose</span>
+                    </button>
+                    <button id="copy-button">
+                        <img src="assets/icons/copy.svg" alt="copy email icon"/>
+                        <span class="small-text">Copy</span>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+
+    </main>
+</body>
+
+</html>
