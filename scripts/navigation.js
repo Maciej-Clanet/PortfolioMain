@@ -4,12 +4,12 @@ document.addEventListener('keydown', function(event) {
     if (event.key >= '1' && event.key <= '6') {
         // Define an array of URLs corresponding to the number keys
         const urls = [
-            './home.html',    // 1
-            './about.html',   // 2
-            './development.html', // 3
-            './design.html',  // 4
-            './cv.html',      // 5
-            './contact.html'  // 6
+            '/home.html',    // 1
+            '/about.html',   // 2
+            '/development.html', // 3
+            '/design.html',  // 4
+            '/cv.html',      // 5
+            '/contact.html'  // 6
         ];
 
 

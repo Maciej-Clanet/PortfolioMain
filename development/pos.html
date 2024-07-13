@@ -1,11 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/development.css">
+    <link rel="stylesheet" href="/css/simplebanner.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/projectthumbnail.css">
+    <link rel="stylesheet" href="/css/projectpage.css">
+
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="../scripts/contact.js" defer></script>
 </head>
+
 <body>
-    pos
+    <header id="side-bar-header">
+        <div id="header-profile-container">
+            <img id="header-profile-image" src="../assets/profile_image_large.png" alt="Profile image of Maciej Clanet" />
+            <span id="header-profile-label">Maciej Clanet</span>
+        </div>
+        <nav id="nav-button-groups-container" aria-label="Main Navigation">
+            <div class="nav-button-group">
+                <a href="./home.html" class="nav-button" title="Home">
+                    <img src="../assets/icons/home.svg" alt="home icon" />
+                    <span class="nav-button-label">Home</span>
+                    <span class="nav-button-key-label">1</span>
+                </a>
+                <a href="./about.html" class="nav-button">
+                    <img src="../assets/icons/person.svg" alt="about icon" title="About" />
+                    <span class="nav-button-label">About</span>
+                    <span class="nav-button-key-label">2</span>
+                </a>
+                <a href="./development.html" class="nav-button active">
+                    <img src="../assets/icons/code.svg" alt="projects icon" title="Development Projects" />
+                    <span class="nav-button-label">Dev Projects</span>
+                    <span class="nav-button-key-label">3</span>
+                </a>
+                <a href="./design.html" class="nav-button">
+                    <img src="../assets/icons/pencil.svg" alt="design icon" title="Design Projects" />
+                    <span class="nav-button-label">Design Projects</span>
+                    <span class="nav-button-key-label">4</span>
+                </a>
+            </div>
+            <div class="nav-button-group">
+                <div class="nav-button-group-label">
+                    Stay In Touch
+                </div>
+                <a href="./cv.html" class="nav-button" title="Cirriculum Vitae">
+                    <img src="../assets/icons/file.svg" alt="cv icon" />
+                    <span class="nav-button-label">CV</span>
+                    <span class="nav-button-key-label">5</span>
+                </a>
+                <a href="./contact.html" class="nav-button" title="Contact">
+                    <img src="../assets/icons/speech_bubble.svg" alt="contact icon" />
+                    <span class="nav-button-label">Contact</span>
+                    <span class="nav-button-key-label">6</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-container">
+        <div id="main-content">
+
+            <div id="banner">
+                <div id="banner-main">
+                    <img id="banner-image" src="../assets/profile_image_large.png"
+                        alt="Profile photo of maciej clanet" />
+                    <h1 id="banner-text">Check these out!</h1>
+                </div>
+            </div>
+
+             <!--Stay in Touch-->
+             <section id="design-projects-section" class="page-section">
+                <header id="contact-header" class="page-section-header">
+                    <img class="page-section-header-image" src="../assets/icons/speech_bubble.svg"
+                        alt="Contact Icon" />
+                    <h2 class="page-section-header-text heading-text">Stay In Touch</h2>
+                </header>
+
+                <footer id="footer-container">
+                    <div class="footer-column">
+                        <h2 class="heading-text">Looking to hire?</h2>
+
+                        <div id="footer-email-container">
+                            <span class="small-text">Email</span>
+                            <span id="email-text" class="small-text">maciejclanet@gmail.com</span>
+                        </div>
+
+                        <div id="footer-email-buttons">
+                            <button id="compose-button" aria-label="Compose email">
+                                <img src="../assets/icons/compose.svg" alt="compose email icon" />
+                                <span class="small-text">Compose</span>
+                            </button>
+                            <button id="copy-button" aria-label="Copy email address">
+                                <img src="../assets/icons/copy.svg" alt="copy email icon" />
+                                <span class="small-text">Copy</span>
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h2 class="heading-text">Check out my CV</h2>
+                        <div id="footer-buttons">
+                            <a href="cv.html" class="footer-button" aria-label="See CV">
+                                <img src="../assets/icons/navigate.svg" alt="CV icon" />
+                                <span class="small-text">CV</span>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </footer>
+            </section>
+
+        </div>
+        <div id="notification-container"></div>
+    </main>
 </body>
+
 </html>
