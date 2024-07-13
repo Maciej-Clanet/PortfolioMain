@@ -60,6 +60,13 @@
     gap: 8px;
     padding: 0px 16px;
     color: var(--text-col);
+
+
+    & a{
+        color: var(--text-col-dark);
+        text-decoration: none;
+        font-weight: 900;
+    }
 }
 
 
