@@ -1,0 +1,12 @@
+#contact-form{
+    color: var(--text-col-dark);
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+#contact-confirmation-row{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}

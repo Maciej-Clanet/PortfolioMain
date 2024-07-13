@@ -1,0 +1,136 @@
+#cv-details-container{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.cv-list-container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.cv-list-header{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    color: var(--text-col);
+}
+
+.cv-list{
+    display: flex;
+}
+.cv-entries{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+.cv-entry{
+    display: flex;
+    gap: 16px;
+    cursor: pointer;
+    border-radius: 8px 0px 0px 8px;
+
+    padding: 16px;
+
+    transition: filter 0.15s ease, box-shadow 0.15s ease;
+    &:hover{
+        background-color: var(--transparent-blue-light);
+    }
+
+    &.active{
+        background-color: var(--transparent-blue);
+    }
+}
+.cv-years{
+    color: var(--text-col-dark);
+    min-width: 175px;
+}
+.cv-details{
+    color: var(--text-col);
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#cv-entry-description{
+    border-left: 1px solid var(--text-col-dark);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 0px 16px;
+    color: var(--text-col);
+}
+
+
+
+/* Experience and Education */
+@media (max-width: 1300px){
+
+    .cv-years{
+        font-size: 18px;
+        min-width: 125px;
+    }
+    .cv-details div .heading-text{
+        font-size: 18px;
+    }
+    
+}
+@media (max-width: 1090px){
+    .cv-years{
+        font-size: 16px;
+        min-width: 105px;
+        width: 105px;
+    }
+    .cv-details div .heading-text{
+        font-size: 16px;
+    }
+    .cv-details div .small-text{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 950px){
+    .cv-list{
+        flex-direction: column;
+    }
+    #cv-entry-description{
+        border-left: none;
+        border-top: 1px solid var(--text-col-dark);
+        padding-top: 8px;
+    }
+
+   
+
+    .cv-details{
+        justify-content: center;
+    }
+    .cv-entry{
+        border-radius: 8px;
+    }
+    #exp-entries .cv-entry:last-of-type{
+        border-radius: 8px 8px 0px 0px;
+    }
+}
+@media (max-width: 700px){
+    .cv-years{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 70px;
+        width: 70px;
+        gap: 2px;
+        text-align: center;
+    }
+    .year-dash{
+        visibility: hidden;
+        flex: 1;
+        display: flex;
+        align-items: center;
+        &:before{
+            content : "↓";
+            visibility: visible;
+        }
+    }
+}
+

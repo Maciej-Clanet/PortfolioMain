@@ -7,7 +7,10 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/cv.css">
+    <link rel="stylesheet" href="css/fullbanner.css">
+    <link rel="stylesheet" href="css/skillstable.css">
+    <link rel="stylesheet" href="css/cvskills.css">
+    <link rel="stylesheet" href="css/footer.css">
 
 
     <script src="scripts/cv.js" defer></script>
@@ -19,7 +22,7 @@
 <body>
     <header id="side-bar-header">
         <div id="header-profile-container">
-            <img id="header-profile-image" src="./assets/profile_image.png" alt="Profile image of Maciej Clanet" />
+            <img id="header-profile-image" src="./assets/profile_image_large.png" alt="Profile image of Maciej Clanet" />
             <span id="header-profile-label">Maciej Clanet</span>
         </div>
         <nav id="nav-button-groups-container" aria-label="Main Navigation">
@@ -66,12 +69,12 @@
     <main id="main-container">
         <div id="main-content">
         
-        <section id="cv-banner-container">
-            <div id="cv-banner">
-                <img id="cv-banner-image" src="./assets/profile_image_large.png"  alt="Profile image of Maciej Clanet"/>
-                <div id="cv-banner-content">
-                    <h1 id="cv-banner-name">Maciej Clanet</h1>
-                    <h2 id="cv-banner-role">Full Stack Developer</h2>
+        <section id="full-banner-container">
+            <div id="full-banner">
+                <img id="full-banner-image" src="./assets/profile_image_large.png"  alt="Profile image of Maciej Clanet"/>
+                <div id="full-banner-content">
+                    <h1 id="full-banner-name">Maciej Clanet</h1>
+                    <h2 id="full-banner-role">Full Stack Developer</h2>
                     <a href="./home.html" class="glass-button">See portfolio →</a>
                 </div>
             </div>
@@ -129,6 +132,7 @@
                 </div>
             </div>
         </section>
+
 
         <section id="cv-details-container">
 
@@ -243,16 +247,16 @@
                     <h2 class="heading-text">Stay In Touch</h2>
                 </header>
 
-                <div id="cv-contact-box">
-                    <div class="cv-column">
+                <footer id="footer-container">
+                    <div class="footer-column">
                     <h2 class="heading-text">Looking to hire?</h2>
 
-                    <div id="cv-email-container">
+                    <div id="footer-email-container">
                         <span class="small-text">Email</span>
                         <span id="email-text" class="small-text">maciejclanet@gmail.com</span>
                     </div>
 
-                    <div id="cv-email-buttons">
+                    <div id="footer-email-buttons">
                         <button id="compose-button" aria-label="Compose email">
                             <img src="assets/icons/compose.svg" alt="compose email icon" />
                             <span class="small-text">Compose</span>
@@ -264,7 +268,23 @@
 
                     </div>
                     </div>
-                </div>
+                    <div class="footer-column">
+                        <h2 class="heading-text">Download</h2>
+    
+                      
+                        <div id="footer-buttons">
+                            <button id="pdf-button" class="footer-button" aria-label="Download Styled PDF of the CV">
+                                <img src="assets/icons/file2.svg" alt="download cv.PDF Icon" />
+                                <span class="small-text">Styled PDF</span>
+                            </button>
+                            <button id="doc-button" class="footer-button"  aria-label="Download simplified DOC of the CV">
+                                <img src="assets/icons/file2.svg" alt="Download cv.DOC icon" />
+                                <span class="small-text">Simplified DOC</span>
+                            </button>
+    
+                        </div>
+                        </div>
+                    </footer>
             </section>
 
             <div id="notification-container"></div>

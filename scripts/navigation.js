@@ -12,6 +12,16 @@ document.addEventListener('keydown', function(event) {
             './contact.html'  // 6
         ];
 
+
+        // Check if the currently focused element is an input or textarea
+        const focusedElement = document.activeElement;
+        const isInputField = focusedElement.tagName === 'INPUT' || focusedElement.tagName === 'TEXTAREA';
+
+        // If the focused element is an input or textarea, do not execute the navigation logic
+        if (isInputField) {
+            return;
+        }
+
         // Get the index of the pressed key (convert key to number and subtract 1 for zero-based index)
         const index = parseInt(event.key) - 1;
 

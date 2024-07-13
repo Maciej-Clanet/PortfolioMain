@@ -7,13 +7,19 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/fullbanner.css">
+    <link rel="stylesheet" href="css/about.css">
+
     <script src="./scripts/navigation.js" defer></script>
+    <script src="./scripts/contact.js" defer></script>
+
 </head>
 
 <body>
     <header id="side-bar-header">
         <div id="header-profile-container">
-            <img id="header-profile-image" src="./assets/profile_image.png" alt="Profile image of Maciej Clanet" />
+            <img id="header-profile-image" src="./assets/profile_image_large.png" alt="Profile image of Maciej Clanet" />
             <span id="header-profile-label">Maciej Clanet</span>
         </div>
         <nav id="nav-button-groups-container" aria-label="Main Navigation">
@@ -24,17 +30,17 @@
                     <span class="nav-button-key-label">1</span>
                 </a>
                 <a href="./about.html" class="nav-button active">
-                    <img src="./assets/icons/person.svg" alt="about icon" title="About"/>
+                    <img src="./assets/icons/person.svg" alt="about icon" title="About" />
                     <span class="nav-button-label">About</span>
                     <span class="nav-button-key-label">2</span>
                 </a>
                 <a href="./development.html" class="nav-button">
-                    <img src="./assets/icons/code.svg" alt="projects icon" title="Development Projects"/>
+                    <img src="./assets/icons/code.svg" alt="projects icon" title="Development Projects" />
                     <span class="nav-button-label">Dev Projects</span>
                     <span class="nav-button-key-label">3</span>
                 </a>
                 <a href="./design.html" class="nav-button">
-                    <img src="./assets/icons/pencil.svg" alt="design icon" title="Design Projects"/>
+                    <img src="./assets/icons/pencil.svg" alt="design icon" title="Design Projects" />
                     <span class="nav-button-label">Design Projects</span>
                     <span class="nav-button-key-label">4</span>
                 </a>
@@ -59,6 +65,76 @@
 
     <main id="main-container">
         <div id="main-content">
+            <section id="full-banner-container">
+                <div id="full-banner">
+                    <img id="full-banner-image" src="./assets/profile_image_large.png"
+                        alt="Profile image of Maciej Clanet" />
+                    <div id="full-banner-content">
+                        <h1 id="full-banner-name">Maciej Clanet</h1>
+                        <h2 id="full-banner-role">Full Stack Developer</h2>
+                        <a href="./home.html" class="glass-button">See portfolio →</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about-section" class="page-section">
+                <h2 class="heading-text">Get to know me</h2>
+                <p class="paragraph-text">Hello! I’m Maciej, a full stack developer born in Poland and currently
+                    residing near London. Since
+                    the rest of my portfolio focuses on development and design, I’d like to use this section to share
+                    more about myself as a person.</p>
+
+                <p class="paragraph-text">I live by simple philosophy: to lead a fulfilling life, one must maintain
+                    several key aspects --
+                    creativity, cognitive abilities, health and fitness, and mental health. I strive to always have
+                    hobbies that cover all of these areas.</p>
+
+                <p class="paragraph-text">For cognitive abilities, development is my go-to. I enjoy experimenting with
+                    new technologies,
+                    frequently testing out new libraries and languages to expand my toolkit. My current job as a
+                    Lecturer also provides constant challenges that keep me thinking critically and solving problems
+                    daily.</p>
+                <p class="paragraph-text">Staying active is important to me. I’m an intermediate runner and a beginner
+                    climber. I’ve completed
+                    two half-marathons and aspire to run a full marathon someday. Perhaps, in the future, I might even
+                    attempt an ultra-marathon, but that’s a long way away!</p>
+                <p class="paragraph-text">
+                    Creativity has always been a significant part of my life. I’ve been drawing digitally on and off for
+                    most of my life, experimented with 3D art a few times, and engaged in a fair amount of design work.
+                    Recently I gotten very into charcoal drawing! I used to run a successful design business, selling my
+                    designs on notebook covers and similar items, which provided me a full-time income. However, the
+                    COVID-19 pandemic brought an end to this venture, as selling guest books become challenging when
+                    gatherings were banned, oh well :). Currently, I sell designs on t-shirts with some success and am
+                    working towards launching a brand soon.</p>
+
+            </section>
+
+            <section id="art-gallery">
+                <img id="charcoal" class="gallery-image" src="assets/art/charcoal.png"
+                    alt="Banner of multiple charcoal drawings" />
+                <div class="gallery-row">
+                    <div>
+                        <img id="monster1" class="gallery-image" src="assets/art/monster1.png"
+                            alt="digital drawing of a symmetrical monster skull" />
+                    </div>
+                    <div>
+                        <img id="pitbull" class="gallery-image" src="assets/art/pitbull.png"
+                            alt="3D rendering of a pitbull" />
+                    </div>
+                </div>
+                <img id="city" class="gallery-image" src="assets/art/city.png"
+                    alt="Drawing of a city in 4 point perspectiv" />
+                <div class="gallery-row">
+                    <div>
+                        <img id="vexel" class="gallery-image" src="assets/art/vexel.png"
+                            alt="vexel art of a modern room" />
+                    </div>
+                    <div>
+                        <img id="monster2" class="gallery-image" src="assets/art/monster2.png"
+                            alt="digital drawing of a very complex demon skull" />
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 </body>

@@ -21,7 +21,105 @@ document.addEventListener('DOMContentLoaded', () => {
     composeButton.addEventListener("click", () => {
         window.location.href = `mailto:${emailAddress}`
     });
+
+
+    //contact form
+    const form = document.getElementById("contact-form");
+    const result = document.getElementById("form-submit-text");
+    const submitButton = document.getElementById("contact-submit-button");
+    const buttonText = submitButton.querySelector('.button-text');
+    const spinner = submitButton.querySelector('.spinner');
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        console.log(object)
+
+        if(!object.message){
+            showNotification("You seem to forgot to write a message!", true);
+            return;
+        }
+        if(!object.email){
+            showNotification("I can't respond without an email!", true);
+            return;
+        }
+
+        //do a waiting slider here or something
+
+
+        Array.from(form.elements).forEach(element => element.disabled = true);
+        
+        submitButton.classList.add("sending");
+        result.innerHTML = "Sending, please wait...";
+        result.classList.remove("success", "danger");
+        
+
+
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                result.innerHTML = "Message received, Thank you!";
+                result.classList.add("success");
+
+                showNotification("Message received, Thank you!");
+
+                form.reset();
+            } else {
+                console.log(response);
+                result.innerHTML = "Sorry, something went wrong. Please wait and try again!";
+                result.classList.add("danger");
+                showNotification(`Something went wrong: ${json.message}`, true);
+                buttonText.innerHTML = "RETRY";
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            result.innerHTML = "Sorry, something went wrong. Please wait and try again!";
+            result.classList.add("danger");
+            showNotification(`Something went wrong: ${error}`, true);
+
+            // submitButton.textContent = "RETRY";
+            buttonText.innerHTML = "RETRY";
+        })
+        .finally(() => {
+            Array.from(form.elements).forEach(element => element.disabled = false);
+            submitButton.classList.remove('sending');
+        });
+
+    });
 });
+
+function sendContactForm(event){
+    event.preventDefault();
+
+    const contactForm = document.getElementById("contact-form");
+    const messageContent = document.getElementById("message-area").value;
+    const userEmail = document.getElementById("user-email").value;
+
+    if(!messageContent){
+        showNotification("You seem to forgot to write a message!", true);
+        return;
+    }
+    if(!userEmail){
+        showNotification("I can't respond without an email!", true);
+        return;
+    }
+
+    contactForm.submit();
+    showNotification("Message received, Thank you!");
+}
 
 
 function showNotification(message, isError = false){
@@ -30,7 +128,7 @@ function showNotification(message, isError = false){
     notification.classList.add('notification');
 
     if (isError) {
-        notification.style.backgroundColor = '#e74c3c'; // Red background for errors
+        notification.style.color = '#FD4D4D'; // Red background for errors
     }
 
     notification.textContent = message;

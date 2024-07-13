@@ -7,13 +7,20 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/fullbanner.css">
+    <link rel="stylesheet" href="css/inputs.css">
+
+    <link rel="stylesheet" href="css/contact.css">
+
     <script src="./scripts/navigation.js" defer></script>
+    <script src="./scripts/contact.js" defer></script>
 </head>
 
 <body>
     <header id="side-bar-header">
         <div id="header-profile-container">
-            <img id="header-profile-image" src="./assets/profile_image.png" alt="Profile image of Maciej Clanet" />
+            <img id="header-profile-image" src="./assets/profile_image_large.png" alt="Profile image of Maciej Clanet" />
             <span id="header-profile-label">Maciej Clanet</span>
         </div>
         <nav id="nav-button-groups-container" aria-label="Main Navigation">
@@ -58,8 +65,91 @@
     </header>
 
     <main id="main-container">
-        <div id="main-content">
+        <div id="main-content" class="main-flex">
+            <!--Header-->
+            <section id="full-banner-container">
+                <div id="full-banner">
+                    <img id="full-banner-image" src="./assets/profile_image_large.png"  alt="Profile image of Maciej Clanet"/>
+                    <div id="full-banner-content">
+                        <h1 id="full-banner-name">Maciej Clanet</h1>
+                        <h2 id="full-banner-role">Full Stack Developer</h2>
+                        <a href="./home.html" class="glass-button">See portfolio →</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--Contact Form-->
+            <section id="contact-form-section" class="page-section glass-section-style">
+                <h2 class="heading-text">Send me a message!</h2>
+                <form id="contact-form"  action="https://api.web3forms.com/submit" method="POST">
+                    
+                    
+                    <input name="name" id="user-name" type="text" placeholder="Enter your name">
+                    <textarea name="message" id="message-area" placeholder="Ask me anything!" rows="6"></textarea>
+                    <input name="email" id="user-email" type="email" placeholder="Enter your email">
+
+                    <!--hidden inputs-->
+                    <input type="hidden" name="from_name" value="Portfolio">
+                    <input type="hidden" name="subject" value="New portfolio contact form message">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="hidden" name="access_key" value="506dd91e-d828-4468-bc8a-cdc5463000e3">
+
+                    <div id="contact-confirmation-row">
+                        <button id="contact-submit-button" type="submit" class="primary-button">
+                            <span class="button-text">SEND</span>
+                            <div class="spinner"></div>
+                        </button>
+                        <p class="small-text" id="form-submit-text">I will email you back as fast as possible!</p>
+                    </div>
+                </form>
+            </section>
+
+            <!--Email footer-->
+            <footer id="footer-container">
+                <div class="footer-column">
+                    <h2 class="heading-text">Just here for the email?</h2>
+
+                    <div id="footer-email-container">
+                        <span class="small-text">Email</span>
+                        <span id="email-text" class="small-text">maciejclanet@gmail.com</span>
+                    </div>
+
+                    <div id="footer-email-buttons">
+                        <button id="compose-button" aria-label="Compose email">
+                            <img src="assets/icons/compose.svg" alt="compose email icon" />
+                            <span class="small-text">Compose</span>
+                        </button>
+                        <button id="copy-button" aria-label="Copy email address">
+                            <img src="assets/icons/copy.svg" alt="copy email icon" />
+                            <span class="small-text">Copy</span>
+                        </button>
+
+                    </div>
+                </div>
+            </footer>
+
+            <!--CV links-->
+            <section id="contact-form-section" class="page-section glass-section-style">
+                <h2 class="heading-text">Looking for my CV?</h2>
+                <div id="footer-buttons">
+                    <a id="cvpage-button" href="./cv.html" class="footer-button" aria-label="Go to interactive CV page">
+                        <img src="assets/icons/file2.svg" alt="Interactive cv icon" />
+                        <span class="small-text">Go to interactive CV Page</span>
+                    </a>
+                    <button id="pdf-button" class="footer-button" aria-label="Download Styled PDF of the CV">
+                        <img src="assets/icons/file2.svg" alt="download cv.PDF Icon" />
+                        <span class="small-text">Download styled PDF</span>
+                    </button>
+                    <button id="doc-button" class="footer-button"  aria-label="Download simplified DOC of the CV">
+                        <img src="assets/icons/file2.svg" alt="Download cv.DOC icon" />
+                        <span class="small-text">Download simplified DOC</span>
+                    </button>
+                </div>
+            </section>
+
+
         </div>
+        <div id="notification-container"></div>
     </main>
 </body>
 

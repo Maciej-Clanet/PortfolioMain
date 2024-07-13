@@ -1,0 +1,85 @@
+textarea, input{
+    background-color: var(--background-alt);
+    border-radius: 8px;
+
+    color: var(--text-col);
+    padding: 16px;
+    outline: none;
+    border: none;
+    resize: vertical;
+
+    width: 100%;
+}
+textarea{
+    min-height: 100px;
+}
+
+
+textarea::-webkit-scrollbar{
+    width: var(--sb-size);
+}
+textarea::-webkit-scrollbar-track{
+    background: var(--sb-track-color);
+    border-radius: 8px;
+}
+textarea::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 8px;
+}
+@supports not selector(::-webkit-scrollbar) {
+    textarea {
+        scrollbar-color: var(--sb-thumb-color)
+                       var(--sb-track-color);
+    }
+  }
+
+
+.primary-button{
+    padding: 8px 16px;
+    color: var(--text-col);
+    background-color: var(--primary-col);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover{
+        background-color: var(--text-col-dark);
+    }
+}
+.primary-button .button-text{
+    font-weight: 600;
+
+    font-size: 22px;
+    letter-spacing: 2.5%;
+}
+
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid white;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none; /* Hidden by default */
+}
+
+@keyframes spin {
+    0% { transform: translateX(-50%) rotate(0deg); }
+    100% { transform: translateX(-50%) rotate(360deg); }
+}
+
+.primary-button.sending .spinner {
+    display: block; /* Show spinner when button is in sending state */
+}
+
+.primary-button.sending .button-text {
+    visibility: hidden; /* Hide text when button is in sending state */
+}

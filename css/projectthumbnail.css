@@ -1,0 +1,115 @@
+.project-thumbnail-image{
+    max-width: 500px;;
+}
+
+.project-tags{
+    left: 0;
+    right: 0;
+    display: flex;
+    gap: 4px;
+}
+.project-tag{
+    color: var(--text-col-dark);
+    background-color: var(--background-alt);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    padding: 4px 8px;
+}
+
+
+.section-item-link{
+    text-decoration: none;
+}
+.project-thumbnail{
+    
+    border-radius: 8px;
+    background-color: var(--transparent-blue);
+
+    display: flex;
+    flex: 1;
+    padding: 16px;
+    gap: 16px;
+    cursor: pointer;
+
+    &:hover{
+        filter: brightness(1.1);
+    }
+}
+.project-thumbnail-details{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--text-col-dark);
+    flex: 1;
+
+    & ul{
+        padding-left: 16px;
+    }
+}
+.project-thumbnail-title{
+    color: var(--text-col);
+}
+.project-thumbnail-more{
+    margin-top: auto;
+}
+
+.project-thumbnail-image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+.project-thumbnail-image{
+    width: 100%;
+}
+.project-thumbnail-more-bottom{
+    display: none;
+    text-decoration: none;
+    color: var(--text-col-dark);
+}
+
+@container projects-section (max-width: 1300px ){
+    .project-thumbnail-image{
+        width: 80%;
+    }
+    .project-thumbnail{
+        flex-direction: column;
+    }
+    .project-thumbnail-more{
+        display: none;
+    }
+    .project-thumbnail-more-bottom{
+        display: flex;
+    }
+}
+
+@media (max-width: 1200px){
+    .project-thumbnail{
+        flex-direction: row;
+    }
+    .project-thumbnail-image{
+        width: 100%;
+    }
+    .project-thumbnail-more{
+        display: flex;
+    }
+    .project-thumbnail-more-bottom{
+        display: none;
+    }
+}
+@media (max-width: 980px){
+    .project-thumbnail{
+        flex-direction: column;
+    }
+    .project-thumbnail-image{
+        width: 75%;
+    }
+    .project-thumbnail-more{
+        display: none;
+    }
+    .project-thumbnail-more-bottom{
+        display: flex;
+    }
+}

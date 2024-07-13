@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/simplebanner.css">
+    <link rel="stylesheet" href="css/projectthumbnail.css">
 
     <script src="./scripts/navigation.js" defer></script>
     <script src="scripts/contact.js" defer></script>
@@ -17,7 +20,7 @@
 <body>
     <header id="side-bar-header">
         <div id="header-profile-container">
-            <img id="header-profile-image" src="./assets/profile_image.png" alt="Profile image of Maciej Clanet" />
+            <img id="header-profile-image" src="./assets/profile_image_large.png" alt="Profile image of Maciej Clanet" />
             <span id="header-profile-label">Maciej Clanet</span>
         </div>
         <nav id="nav-button-groups-container" aria-label="Main Navigation">
@@ -89,18 +92,23 @@
             </section>
 
             <div id="home-sections">
-                <section id="dev-projects-section" class="projects-section">
-                    <header id="dev-projects-header" class="home-section-header">
-                        <img class="home-section-header-image" src="./assets/icons/code.svg" alt="Development Icon" />
-                        <h2 class="home-section-header-text heading-text">Dev Projects</h2>
-                        <a href="./development.html" class="home-section-header-more small-text"
+                <section id="dev-projects-section" class="page-section">
+                    <header id="dev-projects-header" class="page-section-header">
+                        <img class="page-section-header-image" src="./assets/icons/code.svg" alt="Development Icon" />
+                        <h2 class="heading-text">Dev Projects</h2>
+                        <a href="./development.html" class="page-section-header-more small-text"
                             aria-label="View all development projects">View All</a>
                     </header>
-                    <div class="section-items">
+                    <div class="page-section-content">
 
                         <a id="project-pos" href="./development/pos.html" class="project-thumbnail section-item-link">
                             <div class="project-thumbnail-details">
                                 <h3 class="project-thumbnail-title heading-text">Point of Sale</h3>
+                                <div class="project-tags">
+                                    <div class="project-tag small-text">React</div>
+                                    <div class="project-tag small-text">Rust Backend</div>
+                                    <div class="project-tag small-text">Typescript</div>
+                                </div>
                                 <p class="small-text">
                                     Part Owner of a startup developing a fully featured POS aimed at restaurants.</p>
                                 <ul>
@@ -116,6 +124,8 @@
                                 <img id="pos-thumbnail-image" class="project-thumbnail-image"
                                     src="./assets/posthumb.png" alt="Thumbnail of the point of sale startup" />
                             </div>
+                            <span class="small-text project-thumbnail-more-bottom">Read about my involvement here
+                                →</span>
                         </a>
 
 
@@ -123,6 +133,11 @@
                             class="project-thumbnail section-item-link">
                             <div class="project-thumbnail-details">
                                 <h3 class="project-thumbnail-title heading-text">AI Filter App</h3>
+                                <div class="project-tags">
+                                    <div class="project-tag small-text">FastAPI</div>
+                                    <div class="project-tag small-text">React</div>
+                                    <div class="project-tag small-text">Stable Diffusion</div>
+                                </div>
                                 <p class="small-text">
                                     Personal project, prototype of a ai filter app</p>
                                 <ul>
@@ -137,19 +152,21 @@
                                 <img id="ai-thumbnail-image" class="project-thumbnail-image"
                                     src="./assets/aifilterthumb.png" alt="Thumbnail of the ai filter app project" />
                             </div>
+                            <span class="small-text project-thumbnail-more-bottom">Read more about it →</span>
                         </a>
                     </div>
                 </section>
 
-                <section id="design-projects-section" class="projects-section">
-                    <header id="design-projects-header" class="home-section-header">
-                        <img class="home-section-header-image" src="./assets/icons/pencil.svg" alt="Design Icon" />
-                        <h2 class="home-section-header-text heading-text">Design Projects</h2>
-                        <a href="./design.html" class="home-section-header-more small-text"
+                <section id="design-projects-section" class="page-section">
+                    <header id="design-projects-header" class="page-section-header">
+                        <img class="page-section-header-image" src="./assets/icons/pencil.svg" alt="Design Icon" />
+                        <h2 class="page-section-header-text heading-text">Design Projects</h2>
+                        <a href="./design.html" class="page-section-header-more small-text"
                             aria-label="View all design projects">View All</a>
                     </header>
-                    <div class="section-items">
-                        <a href="./design/punkfluent.html" id="project-punkfluent" class="project-thumbnail section-item-link">
+                    <div class="page-section-content">
+                        <a href="./design/punkfluent.html" id="project-punkfluent"
+                            class="project-thumbnail section-item-link">
 
                             <div class="project-thumbnail-details">
                                 <h3 class="project-thumbnail-title heading-text">PUNKFLUENT</h3>
@@ -165,6 +182,7 @@
                                 <img id="pos-thumbnail-image" class="project-thumbnail-image"
                                     src="./assets/punkfluentthumb.png" alt="Thumbnail of the punkfluent brand design" />
                             </div>
+                            <span class="small-text project-thumbnail-more-bottom">See full design →</span>
                         </a>
                         <a href="./design/kanban.html" class="project-thumbnail section-item-link">
                             <div class="project-thumbnail-details">
@@ -183,28 +201,29 @@
                                 <img id="ai-thumbnail-image" class="project-thumbnail-image"
                                     src="./assets/kanbanthumb.png" alt="Thumbnail of the kanban app design" />
                             </div>
+                            <span class="small-text project-thumbnail-more-bottom">See full design →</span>
                         </a>
                     </div>
                 </section>
 
                 <!--STAY IN TOUCH-->
-                <section id="design-projects-section" class="projects-section">
-                    <header id="contact-header" class="home-section-header">
-                        <img class="home-section-header-image" src="./assets/icons/speech_bubble.svg"
+                <section id="design-projects-section" class="page-section">
+                    <header id="contact-header" class="page-section-header">
+                        <img class="page-section-header-image" src="./assets/icons/speech_bubble.svg"
                             alt="Contact Icon" />
-                        <h2 class="home-section-header-text heading-text">Stay In Touch</h2>
+                        <h2 class="page-section-header-text heading-text">Stay In Touch</h2>
                     </header>
 
-                    <div id="cv-contact-box">
-                        <div class="cv-column">
+                    <footer id="footer-container">
+                        <div class="footer-column">
                             <h2 class="heading-text">Looking to hire?</h2>
 
-                            <div id="cv-email-container">
+                            <div id="footer-email-container">
                                 <span class="small-text">Email</span>
                                 <span id="email-text" class="small-text">maciejclanet@gmail.com</span>
                             </div>
 
-                            <div id="cv-email-buttons">
+                            <div id="footer-email-buttons">
                                 <button id="compose-button" aria-label="Compose email">
                                     <img src="assets/icons/compose.svg" alt="compose email icon" />
                                     <span class="small-text">Compose</span>
@@ -216,20 +235,21 @@
 
                             </div>
                         </div>
-                        <div class="cv-column">
+                        <div class="footer-column">
                             <h2 class="heading-text">Check out my CV</h2>
-
-                            <a href="cv.html" id="cv-button" aria-label="See CV">
-                                <img src="assets/icons/file2.svg" alt="CV icon" />
-                                <span class="small-text">CV</span>
-                            </a>
+                            <div id="footer-buttons">
+                                <a href="cv.html" class="footer-button" aria-label="See CV">
+                                    <img src="assets/icons/file2.svg" alt="CV icon" />
+                                    <span class="small-text">CV</span>
+                                </a>
+                            </div>
 
 
                         </div>
-                    </div>
+                    </footer>
                 </section>
 
-                <div id="notification-container"></div>
+                
 
                 </section>
 
@@ -237,6 +257,7 @@
 
 
         </div>
+        <div id="notification-container"></div>
     </main>
 </body>
 
