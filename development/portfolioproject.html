@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punkfluent Design - Maciej Clanet Portfolio</title>
+    <title>This Portfolio Website - Maciej Clanet Portfolio</title>
 
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/development.css">
@@ -19,8 +19,9 @@
     <script src="../scripts/themes.js" defer></script>
 
 
-    <meta name="description" content="Detailed view of the Punkfluent brand design made by Maciej Clanet.">
-    <meta name="keywords" content="project, portfolio, Maciej Clanet, web development, design, figma ">
+    <meta name="description" content="Detailed view of the how this portfolio was made by Maciej Clanet.">
+    <meta name="keywords"
+        content="project, portfolio, Maciej Clanet, web development, design, frontend">
     <meta name="author" content="Maciej Clanet">
     <meta name="robots" content="index, follow">
 </head>
@@ -44,12 +45,12 @@
                     <span class="nav-button-label">About</span>
                     <span class="nav-button-key-label">2</span>
                 </a>
-                <a href="../development.html" class="nav-button ">
+                <a href="../development.html" class="nav-button active">
                     <img src="../assets/icons/code.svg" alt="projects icon" title="Development Projects" />
                     <span class="nav-button-label">Dev Projects</span>
                     <span class="nav-button-key-label">3</span>
                 </a>
-                <a href="../design.html" class="nav-button active">
+                <a href="../design.html" class="nav-button">
                     <img src="../assets/icons/pencil.svg" alt="design icon" title="Design Projects" />
                     <span class="nav-button-label">Design Projects</span>
                     <span class="nav-button-key-label">4</span>
@@ -89,87 +90,35 @@
             </div>
 
             <section id="project-tabs">
-                <a class="tab-button small-text active" href="../design/punkfluent.html">Punkfluent Brand</a>
-                <a class="tab-button small-text" href="../design/kanban.html">Kanban Board App</a>
+                <a class="tab-button small-text" href="../development/pos.html">POSperity - Point of Sale</a>
+                <a class="tab-button small-text" href="../development/aifilters.html">AI Filter App</a>
+                <a class="tab-button small-text active" href="../development/portfolioproject.html">This Portfolio</a>
             </section>
 
             <section id="project-section">
                 <header id="project-header">
-                    <h1 class="heading-text">PUNKFLUENT</h2>
+                    <h1 class="heading-text">This Portfolio</h2>
                         <div class="project-subheading-table">
                             <div class="small-text">Purpose</div>
-                            <div class="small-text">I'm planning to launch a t-shirt design brand soon.</div>
-                            <div class="small-text">Planned Tech</div>
-                            <div class="small-text">Integration with amazon API, virtual shopping cart,<br>amazon
-                                checkout, affiliate links</div>
-                            <div class="small-text">Figma Link</div>
-                            <div>
-                                <a class="small-text" target="_blank"
-                                    href="https://www.figma.com/design/r5Uwz1m51YZt1fy90NCJVR/Punkfluent?node-id=160-30983&t=3zWgF9cCgPqYVzTG-0">View
-                                    Here</a>
-                            </div>
+                            <div class="small-text">Personal Project</div>
+                            <div class="small-text">Tech</div>
+                            <div class="small-text">No frameworks, just html, css, and js</div>
                         </div>
                 </header>
                 <div id="article-container">
                     <article id="project-main">
-                        <img class="article-image-below" src="../assets/articles/punkfluent/PunkfluentSplash.png"
-                            alt="Splash Page of the Punkfluent brand" />
                         <h2 id="Project_Overview" class="heading-text article-heading">Project Overview</h2>
-                        <p class="paragraph-text">
-                            I run a business creating t-shirt designs to be printed through print-on-demand services,
-                            mainly Amazon's "Merch by Amazon" platform. Amazon handles all the printing and shipping,
-                            while I collect royalty on any product they sell with my design.
-                        </p><br>
-                        <p class="paragraph-text">
-                            I have been doing this for a while, creating designs in various niches. However, I always
-                            wanted to create a coherent brand that I could develop into something standalone, and this
-                            brand will be my attempt at this.
-                        </p><br>
-                        <p class="paragraph-text">
-                            I have picked a general aesthetic niche that I'm quite familiar with and know I can make
-                            designs that sell (I've already sold a few). I'm going to market the website through social
-                            media channels, including TikTok, Instagram, and YouTube shorts. Marketing will be done
-                            through a combination of organic content, paid advertising, and hiring micro-influencers.
-                        </p><br>
-                        <p class="paragraph-text">
-                            As an additional benefit, any sales made through the marketing efforts are likely to
-                            increase the product's search ranking for organic Amazon traffic. It is my hope that I can
-                            use this strategy to break into some competitive, high-volume keywords and niches.
-                        </p>
+                        <p class="paragraph-text">I needed an all-in-one location to showcase my latest development and design projects, my CV, and contact information, so I have developed this portfolio website. I have developed this website using simple HTML, CSS, and JS and hosted it on GitHub pages.</p>
 
-                        <h2 id="Design_Considerations" class="heading-text article-heading">Design Considerations</h2>
+                        <h2 id="Framework" class="heading-text article-heading">Why no framework?</h2>
+                        <p class="paragraph-text">To keep it simple, While the design might look more like an application than a website, and I do admit part of me was tempted to reach for React, it was not the best choice. Using React would make the bundle size unnecessarily large, reducing load times without providing any real benefit to the website's purpose of displaying static information.</p>
+                        <p c lass="paragraph-text">When I was making the decision, my main consideration was to make the website as light and cheap to host as possible. Since this portfolio does not need to be dynamic, even something like HTMX would have been overkill! A pure no-framework static website achieves all of my requirements perfectly.</p>
 
-                        <h3 id="Bold_Design" class="paragraph-text article-subheading">Bold Design</h3>
-                        <p class="paragraph-text">
-                            Because of the nature of the niche, I wanted to make the design very bold. Strong colors,
-                            high contrast, torn edges, motion—a logo where letters are literally breaking out of the box
-                            they are in!
-                        </p>
-
-                        <h3 id="Mobile_Friendly" class="paragraph-text article-subheading">Mobile Friendly</h3>
-                        <p class="paragraph-text">
-                            As I plan to advertise through mobile-first platforms like TikTok and YouTube Shorts, I know
-                            ahead of time that the majority of the visitors are going to be seeing the website on a
-                            mobile device. Because of this, I have given extra consideration to the mobile layout of the
-                            site, and I'm planning to improve it further as I perform user experience testing.
-                        </p>
-
-                        <h3 id="Product_Convenience" class="paragraph-text article-subheading">Product Browsing
-                            Convenience</h3>
-                        <p class="paragraph-text">
-                            At the end of the day, this is an e-commerce website. The main feature users are meant to
-                            interact with is the product search and details pages. I have designed comprehensive filters
-                            that align the product details on Amazon's website. I also kept it simple with a collection
-                            page that compares many designs at once, allowing the customer to find something that they
-                            will enjoy..
-                        </p>
-                        <h2 id="Design_Showcase" class="heading-text article-heading">Design</h2>
-                        <p class="paragraph-text">For all pages and better viewing, <a target="_blank"
-                                href="https://www.figma.com/design/r5Uwz1m51YZt1fy90NCJVR/Punkfluent?node-id=160-30983&t=3zWgF9cCgPqYVzTG-0">open
-                                the Figma design.</a>
-                        </p>
-                        <img class="article-image-below" src="../assets/articles/punkfluent/PunkfluentHome.png"
-                            alt="Home page of the punkfluent brand" />
+                        <h2 id="Design" class="heading-text article-heading">Design</h2>
+                        <p class="paragraph-text">As much as I would like to take full credit for the design, this portfolio was very heavily inspired by SJ Zhang. You can find his portfolio <a target="_blank" href="https://www.sj.land/">here.</a></p><br>
+                        <p class="paragraph-text">That being said, I have made a lot of changes to the design in order to better suit my needs, including adding entire new pages not present in the design I took inspiration from. The CV, contact information, and individual project pages have not been present in the original design source. The design of pretty much every single page has changed substantially; after all, what I require from my portfolio is different from what SJ Zhang requires from his.</p><br>
+                        <p class="paragraph-text">Before I started development, I first created a Figma design. You can see the Figma project <a target="_blank" href="https://www.figma.com/design/qRChFy3LBRN6ghynIV1X3X/Portfolio-New?node-id=0-1">here</a>.</p>
+                       
                     </article>
                     <aside id="toc">
                         <nav>

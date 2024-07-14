@@ -1,11 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kanban for Teams - Maciej Clanet Portfolio</title>
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/development.css">
+    <link rel="stylesheet" href="../css/simplebanner.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/projectthumbnail.css">
+    <link rel="stylesheet" href="../css/projectpage.css">
+
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="../scripts/contact.js" defer></script>
+    <script src="../scripts/projectnav.js" defer></script>
+    <script src="../scripts/themes.js" defer></script>
+
+
+    <meta name="description" content="Detailed view of the Collaborative kanban app design made by Maciej Clanet.">
+    <meta name="keywords" content="project, portfolio, Maciej Clanet, web development, design, figma ">
+    <meta name="author" content="Maciej Clanet">
+    <meta name="robots" content="index, follow">
 </head>
+
 <body class="dark-theme">
-    kanban
+    <header id="side-bar-header">
+        <div id="header-profile-container">
+            <img id="header-profile-image" src="../assets/profile_image_large.png"
+                alt="Profile image of Maciej Clanet" />
+            <span id="header-profile-label">Maciej Clanet</span>
+        </div>
+        <nav id="nav-button-groups-container" aria-label="Main Navigation">
+            <div class="nav-button-group">
+                <a href="../index.html" class="nav-button" title="Home">
+                    <img src="../assets/icons/home.svg" alt="home icon" />
+                    <span class="nav-button-label">Home</span>
+                    <span class="nav-button-key-label">1</span>
+                </a>
+                <a href="../about.html" class="nav-button">
+                    <img src="../assets/icons/person.svg" alt="about icon" title="About" />
+                    <span class="nav-button-label">About</span>
+                    <span class="nav-button-key-label">2</span>
+                </a>
+                <a href="../development.html" class="nav-button ">
+                    <img src="../assets/icons/code.svg" alt="projects icon" title="Development Projects" />
+                    <span class="nav-button-label">Dev Projects</span>
+                    <span class="nav-button-key-label">3</span>
+                </a>
+                <a href="../design.html" class="nav-button active">
+                    <img src="../assets/icons/pencil.svg" alt="design icon" title="Design Projects" />
+                    <span class="nav-button-label">Design Projects</span>
+                    <span class="nav-button-key-label">4</span>
+                </a>
+            </div>
+            <div class="nav-button-group">
+                <div class="nav-button-group-label">
+                    Stay In Touch
+                </div>
+                <a href="../cv.html" class="nav-button" title="Cirriculum Vitae">
+                    <img src="../assets/icons/file.svg" alt="cv icon" />
+                    <span class="nav-button-label">CV</span>
+                    <span class="nav-button-key-label">5</span>
+                </a>
+                <a href="../contact.html" class="nav-button" title="Contact">
+                    <img src="../assets/icons/speech_bubble.svg" alt="contact icon" />
+                    <span class="nav-button-label">Contact</span>
+                    <span class="nav-button-key-label">6</span>
+                </a>
+            </div>
+        </nav>
+        <button id="theme-toggle" class="nav-button">
+            <img id="theme-toggle-icon" src="../assets/icons/sun.svg" alt="sun icon for light mode" />
+            <span id="theme-toggle-text">Switch to light mode</span>
+        </button>
+    </header>
+
+    <main id="main-container">
+        <div id="main-content">
+
+            <div id="banner">
+                <div id="banner-main">
+                    <img id="banner-image" src="../assets/profile_image_large.png"
+                        alt="Profile photo of maciej clanet" />
+                    <h1 id="banner-text">Check these out!</h1>
+                </div>
+            </div>
+
+            <section id="project-tabs">
+                <a class="tab-button small-text " href="../design/punkfluent.html">Punkfluent Brand</a>
+                <a class="tab-button small-text active" href="../design/kanban.html">Kanban Board App</a>
+            </section>
+
+            <section id="project-section">
+                <header id="project-header">
+                    <h1 class="heading-text">Collaboratie Kanban Boards App</h2>
+                        <div class="project-subheading-table">
+                            <div class="small-text">Purpose</div>
+                            <div class="small-text">An app the allows management and real-time collaboration on kanban
+                                boards.</div>
+                            <div class="small-text">Figma Link</div>
+                            <div>
+                                <a class="small-text" target="_blank"
+                                    href="https://www.figma.com/design/kiS2Vqiyg68KAeORFi6LQY/TODO-project?node-id=0-1&t=3zWgF9cCgPqYVzTG-0">View
+                                    Here</a>
+                            </div>
+                        </div>
+                </header>
+                <div id="article-container">
+                    <article id="project-main">
+                       
+                        
+                        <h2 id="Project_Overview" class="heading-text article-heading">Project Overview</h2>
+                        <p class="paragraph-text">
+                            In order to learn more about collaborative environments, I have designed this "Kanban for
+                            Teams" with the intention of later developing it and including features such as:
+                        </p>
+                        <ul>
+                            <li>Real-time collaboration on a board</li>
+                            <li>Creating teams and managing members</li>
+                            <li>Configurable access settings for boards</li>
+                            <li>Setting boards as favorites</li>
+                            <li>Folder organization</li>
+                        </ul>
+                        <p class="paragraph-text">
+                            The current design showcases a lot of this, although it's not fully complete. Many of the
+                            settings menus have not been designed yet. Nevertheless, I think what's there showcases the
+                            general idea.
+                        </p>
+                        <img class="article-image-below" src="../assets/articles/kanban/KanbanMain.png"
+                        alt="Main Page of the kanban collaborative app" />
+                        <img class="article-image-below" src="../assets/articles/kanban/KanbanBoard.png"
+                            alt="Kanban board page of the app" />
+                    </article>
+                    <aside id="toc">
+                        <nav>
+                            <ul id="toc-list">
+                                <!--javascript-->
+                            </ul>
+                        </nav>
+                    </aside>
+                </div>
+
+
+            </section>
+
+            <!--Stay in Touch-->
+            <section id="design-projects-section" class="page-section">
+                <header id="contact-header" class="page-section-header">
+                    <img class="page-section-header-image" src="../assets/icons/speech_bubble.svg" alt="Contact Icon" />
+                    <h2 class="page-section-header-text heading-text">Stay In Touch</h2>
+                </header>
+
+                <footer id="footer-container">
+                    <div class="footer-column">
+                        <h2 class="heading-text">Looking to hire?</h2>
+
+                        <div id="footer-email-container">
+                            <span class="small-text">Email</span>
+                            <span id="email-text" class="small-text">maciejclanet@gmail.com</span>
+                        </div>
+
+                        <div id="footer-email-buttons">
+                            <button id="compose-button" aria-label="Compose email">
+                                <img src="../assets/icons/compose.svg" alt="compose email icon" />
+                                <span class="small-text">Compose</span>
+                            </button>
+                            <button id="copy-button" aria-label="Copy email address">
+                                <img src="../assets/icons/copy.svg" alt="copy email icon" />
+                                <span class="small-text">Copy</span>
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h2 class="heading-text">Check out my CV</h2>
+                        <div id="footer-buttons">
+                            <a href="../cv.html" class="footer-button" aria-label="See CV">
+                                <img src="../assets/icons/navigate.svg" alt="CV icon" />
+                                <span class="small-text">CV</span>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </footer>
+            </section>
+
+        </div>
+        <div id="notification-container"></div>
+    </main>
 </body>
+
 </html>

@@ -34,6 +34,12 @@
     & div:nth-child(2n){
         color: var(--text-col-dark)
     }
+
+    & a{
+        text-decoration: none;
+        color: var(--text-col-dark);
+        font-weight: 900;
+    }
 }
 
 #project-section{
@@ -51,6 +57,10 @@
     color: var(--text-col);
     font-weight: 400;
     line-height: 1.5;
+}
+#project-main a{
+    text-decoration: none;
+    color: var(--text-col-dark);
 }
 
 #project-main ul{
