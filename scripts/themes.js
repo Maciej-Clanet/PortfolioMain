@@ -21,9 +21,6 @@ function getBasePath() {
 }
 
 let basePath =  getBasePath();
-if( window.location.pathname.includes('/development') ||  window.location.pathname.includes('/design')){
-    basePath = "../assets/icons/"
-}
 
 if (userThemeChoice === 'light') {
     setThemeLight();
