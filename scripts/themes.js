@@ -3,27 +3,17 @@ const toggle = document.getElementById("theme-toggle");
 const toggleIcon = document.getElementById("theme-toggle-icon");
 const toggleText = document.getElementById("theme-toggle-text");
 
+// Function to get the correct base path
 function getBasePath() {
     const path = window.location.pathname;
-    const isGitHubPages = path.includes('/PortfolioMain/');
+    const depth = path.split('/').length - 2; // Adjust for depth in the path
+    let basePath = '';
     
-    if (isGitHubPages) {
-        if (path.includes('/development/') || path.includes('/design/')) {
-            return '../assets/icons/';
-        } else if (path.endsWith('/development.html') || path.endsWith('/design.html')) {
-            return './assets/icons/';
-        } else {
-            return './assets/icons/';
-        }
-    } else {
-        if (path.includes('/development/') || path.includes('/design/')) {
-            return '../assets/icons/';
-        } else if (path.endsWith('/development.html') || path.endsWith('/design.html')) {
-            return './assets/icons/';
-        } else {
-            return './assets/icons/';
-        }
+    for (let i = 0; i < depth; i++) {
+        basePath += '../';
     }
+
+    return basePath + 'assets/icons/';
 }
 
 let basePath =  getBasePath();
