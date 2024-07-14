@@ -15,32 +15,34 @@
 
     <script src="../scripts/navigation.js" defer></script>
     <script src="../scripts/contact.js" defer></script>
+    <script src="../scripts/projectnav.js" defer></script>
 </head>
 
 <body>
     <header id="side-bar-header">
         <div id="header-profile-container">
-            <img id="header-profile-image" src="../assets/profile_image_large.png" alt="Profile image of Maciej Clanet" />
+            <img id="header-profile-image" src="../assets/profile_image_large.png"
+                alt="Profile image of Maciej Clanet" />
             <span id="header-profile-label">Maciej Clanet</span>
         </div>
         <nav id="nav-button-groups-container" aria-label="Main Navigation">
             <div class="nav-button-group">
-                <a href="./home.html" class="nav-button" title="Home">
+                <a href="/home.html" class="nav-button" title="Home">
                     <img src="../assets/icons/home.svg" alt="home icon" />
                     <span class="nav-button-label">Home</span>
                     <span class="nav-button-key-label">1</span>
                 </a>
-                <a href="./about.html" class="nav-button">
+                <a href="/about.html" class="nav-button">
                     <img src="../assets/icons/person.svg" alt="about icon" title="About" />
                     <span class="nav-button-label">About</span>
                     <span class="nav-button-key-label">2</span>
                 </a>
-                <a href="./development.html" class="nav-button active">
+                <a href="/development.html" class="nav-button active">
                     <img src="../assets/icons/code.svg" alt="projects icon" title="Development Projects" />
                     <span class="nav-button-label">Dev Projects</span>
                     <span class="nav-button-key-label">3</span>
                 </a>
-                <a href="./design.html" class="nav-button">
+                <a href="/design.html" class="nav-button">
                     <img src="../assets/icons/pencil.svg" alt="design icon" title="Design Projects" />
                     <span class="nav-button-label">Design Projects</span>
                     <span class="nav-button-key-label">4</span>
@@ -50,12 +52,12 @@
                 <div class="nav-button-group-label">
                     Stay In Touch
                 </div>
-                <a href="./cv.html" class="nav-button" title="Cirriculum Vitae">
+                <a href="/cv.html" class="nav-button" title="Cirriculum Vitae">
                     <img src="../assets/icons/file.svg" alt="cv icon" />
                     <span class="nav-button-label">CV</span>
                     <span class="nav-button-key-label">5</span>
                 </a>
-                <a href="./contact.html" class="nav-button" title="Contact">
+                <a href="/contact.html" class="nav-button" title="Contact">
                     <img src="../assets/icons/speech_bubble.svg" alt="contact icon" />
                     <span class="nav-button-label">Contact</span>
                     <span class="nav-button-key-label">6</span>
@@ -75,11 +77,252 @@
                 </div>
             </div>
 
-             <!--Stay in Touch-->
-             <section id="design-projects-section" class="page-section">
+            <section id="project-tabs">
+                <a class="tab-button small-text active " href="/development/pos.html">POSperity - Point of Sale</a>
+                <a class="tab-button small-text" href="/development/aifilters.html">AI Filter App</a>
+            </section>
+
+            <section id="project-section">
+                <header id="project-header">
+                    <h1 class="heading-text">POSperity Point of Sale Software</h2>
+                        <div class="project-subheading-table">
+                            <div class="small-text">Company</div>
+                            <div class="small-text">POSperity</div>
+                            <div class="small-text">Position</div>
+                            <div class="small-text">Full Stack Dev, Designer, Co-Owner</div>
+                        </div>
+                </header>
+                <div id="article-container">
+                    <article id="project-main">
+                        <h2 id="Project_Overview" class="heading-text article-heading">Project Overview</h2>
+                        <p class="paragraph-text">
+                            I am currently engaged in a startup venture alongside two other developers.<br>
+                            We are developing a comprehensive Point of Sale system tailored for restaurants.<br>
+                            Our prototype has been successfully deployed in a pizza shop for over a year, demonstrating
+                            its effectiveness and reliability.<br>
+                            We are now in the process of expanding our reach by implementing our system in two
+                            additional locations.
+                        </p>
+                        <img class="article-image-below" src="/assets/articles/pos/Take Order.png"
+                            alt="Point of sale take order screen" />
+                        <h2 id="My_Involvement" class="heading-text article-heading">My Involvement</h2>
+                        <p class="paragraph-text">As in any startup, my responsibility is anything that needs to get
+                            done.</p>
+                        <h3 id="Backend" class="paragraph-text article-subheading">Back-end Development</h3>
+                        <p class="paragraph-text">I have played a pivotal role in developing the Rust back-end API,
+                            where I’ve crafted a substantial portion of the back-end endpoints</p>
+                        <h3 id="Fontend" class="paragraph-text article-subheading">Front-end Development</h3>
+                        <p class="paragraph-text">
+                            I have contributed significantly to the project by developing various <b>full-stack
+                                features</b>,
+                            including:
+                        <ul>
+                            <li> Report pages: Crafting detailed and interactive report interfaces for business
+                                analytics.</li>
+                            <li>Employee Management: Implementing systems for efficient management of restaurant staff.
+                            </li>
+
+                            <li>Security: Ensuring the robustness and integrity of our system against potential
+                                threats.</li>
+                            <li>Miscellaneous Features: Enhancing the system with a variety of small yet impactful
+                                features across different modules.</li>
+                        </ul>
+
+
+                        </p>
+                        <h3 id="Design" class="paragraph-text article-subheading">Design</h3>
+                        <p class="paragraph-text">As the primary designer of the project, I am responsible for the
+                            visual and user experience aspects. My designs are crafted using Figma, ensuring a cohesive
+                            and intuitive interface for our users.</p>
+                        <h2 id="Feature_showcase" class="heading-text article-heading">Feature Showcase</h2>
+                        <h3 id="Reporting_Dashboard" class="paragraph-text article-subheading">Reporting System -
+                            Dashboard</h3>
+                        <div class="article-section-with-image">
+                            <div class="article-text-column">
+                                <p class="paragraph-text">A comprehensive and fully functional reporting system.</p>
+                                <ul>
+                                    <li>Analyze Revenue: Delve into revenue details by product, category, and service
+                                    </li>
+                                    <li>Trend Analysis: Examine trends over time to make informed decisions.</li>
+                                    <li>Vat Liability Summary: Obtain a quick overview of VAT liabilities</li>
+                                    <li>Smart VAT Breakdown: Receive a detailed breakdown of VAT liability based on the
+                                        composition of orders.</li>
+                                </ul>
+                            </div>
+                            <div class="article-image-column">
+                                <img class="article-image-side" src="/assets//articles/pos/Reporting Dashboard.png"
+                                    alt="Reports Summary Dashboard" />
+                            </div>
+                        </div>
+                        <h3 id="Reporting_Financials" class="paragraph-text article-subheading">Reporting System -
+                            Financials</h3>
+                        <div class="article-section-with-image">
+                            <div class="article-text-column">
+                                <p class="paragraph-text">An extensive analysis of financial performance, VAT, expenses,
+                                    and tax
+                                    liabilities.</p>
+                                <ul>
+                                    <li>Quick Summary: Offers an immediate snapshot of financial health.</li>
+                                    <li>Historical Performance: Reviews financial performance from past years for
+                                        comparative
+                                        analysis.</li>
+                                    <li>Expense Recording: Facilitates the recording of expenses for accurate financial
+                                        tracking.</li>
+                                    <li>Automated Tax Liability Calculation: Automatically calculates tax liabilities,
+                                        simplifying financial management.</li>
+                                </ul>
+                            </div>
+                            <div class="article-image-column">
+                                <img class="article-image-side" src="/assets//articles/pos/Reporting Financials.png"
+                                    alt="Reports Financials Dashboard" />
+                            </div>
+
+                        </div>
+
+
+                        <h3 id="Employee_Management" class="paragraph-text article-subheading">Employee Management</h3>
+
+                        <div class="article-section-with-image">
+                            <div class="article-text-column">
+                                <p class="paragraph-text">Streamlines the management of employee shifts.</p>
+                                <ul>
+                                    <li>Effortless lookup of employee availability.</li>
+                                    <li>Sort-able by time, type, and name.</li>
+                                    <li>Simple adjustments to shift times.</li>
+                                    <li>Future feature: Integrated payroll management.</li>
+                                </ul>
+                            </div>
+                            <div class="article-image-column">
+                                <img class="article-image-side" src="/assets//articles/pos/Employee1.png"
+                                    alt="Reports Employee Management employee list" />
+                                <img class="article-image-side" src="/assets//articles/pos/Employee2.png"
+                                    alt="Reports Employee Management employee editing" />
+                            </div>
+                        </div>
+
+                        <h3 id="Security_Panel" class="paragraph-text article-subheading">Security Panel</h3>
+
+                        <div class="article-section-with-image">
+                            <div class="article-text-column">
+                                <p class="paragraph-text">Robust security settings ensure system integrity.</p>
+                                <ul>
+                                    <li>Admin Panel is secured with enhanced protection</li>
+                                    <li>Group permissions and an audit log for the forthcoming features</li>
+                                </ul>
+                            </div>
+                            <div class="article-image-column">
+                                <img class="article-image-side" src="/assets//articles/pos/Admin Panel.png"
+                                    alt="Admin panel security settings" />
+                            </div>
+                        </div>
+
+                        <h3 id="Product Management" class="paragraph-text article-subheading">Product Management</h3>
+
+                        <div class="article-section-with-image">
+
+                            <div class="article-text-column">
+                                <p class="paragraph-text">Advanced menu and deal management system</p>
+                                <ul>
+                                    <li>Smart menu builder automatically populates fields based on relevant selections.
+                                    </li>
+                                    <li>Capability to tag potential allergens or preferences such as meat or nuts for
+                                        auto-detection.</li>
+                                    <li>Sophisticated deal builder setup enabling the creation of virtually any type of
+                                        deal a
+                                        restaurant could envision</li>
+                                    <li>Deals are automatically detected when processing an order.</li>
+                                </ul>
+                            </div>
+                            <div class="article-image-column">
+                                <img class="article-image-side" src="/assets//articles/pos/ProductM1.png"
+                                    alt="Product management screen showing different tabs of steps in the workflow" />
+                                <img class="article-image-side" src="/assets//articles/pos/Product M2.png"
+                                    alt="Product management screen showing editing deals" />
+                            </div>
+                        </div>
+
+
+                        <h3 id="Table_Service" class="paragraph-text article-subheading">Table Service</h3>
+
+                        <div class="article-section-with-image">
+
+                            <div class="article-text-column">
+                                <p class="paragraph-text">Interactive floor plan builder for table service.</p>
+                                <ul>
+                                    <li>Floor plan builder for creating tables, managing seating availability, and
+                                        setting table
+                                        charges.</li>
+                                    <li>Convenient order placement directly from a mobile device by waitstaff</li>
+                                    <li>Integrated table booking system for reservations.</li>
+                                </ul>
+                            </div>
+                            <div class="article-image-column">
+                                <img class="article-image-side" src="/assets//articles/pos/Table Service.png"
+                                    alt="Table service setup and management screen" />
+                            </div>
+                        </div>
+
+
+                        <h2 id="The_Tech" class="heading-text article-heading">The Tech</h2>
+                        <p class="paragraph-text">
+                            We have carefully selected our tech stack based on the goals of the software, as well as the
+                            environment it will be run in.<br><br>
+                            On the <b>back-end</b> side, we have used <b>Rust</b>. There are few reasons for this.</p>
+
+
+                        <h3 id="The_Speed" class="paragraph-text article-subheading">The Speed</h3>
+                        <p class="paragraph-text">Our primary target audience are small restaurants. The software is
+                            also running on a single server, to which multiple terminals can connect to over a local
+                            network.<br>
+                            We wanted to make sure that the restaurants would not be forced to buy expensive hardware in
+                            order to run our system. For this reason we need a high performance language like Rust.</p>
+                        <h3 id="The_Reliability" class="paragraph-text article-subheading">The Reliability</h3>
+                        <p class="paragraph-text">One of the worse case scenarios that could happen to our system, is it
+                            crashing in the middle of a busy shift, taking down the restaurant ability to take orders.
+                            Because of this, we need to make sure our code will never crash, and extensively test it for
+                            bugs.</p>
+                        <p class="paragraph-text">Rust helps a lot here. The Rust language is known for extensive error
+                            handling functionalities, which we take full advantage of. Furthermore rust is a compiled
+                            language, which helps us catch errors early, before they have the chance to cause any damage
+                            or be missed.</p>
+                        <p class="paragraph-text">The choice of <b>database</b> was also very important.
+                            We had a few restrictions in our choice. One of our goals is to keep the bundle size tiny,
+                            and make the setup process as fast and easy as possible. We needed a database that is fast,
+                            small, and easy to embed directly into the application.</p>
+                        <p class="paragraph-text">We eventually landed on <b>Indradb</b>, a graph database written in
+                            rust. This is a little known database, but it has ticked all of our requirements. In some
+                            ways it’s also our biggest mistake, as this database is extremely hard to work with.</p>
+
+                        <p class="paragraph-text">On the <b>front-end</b> side, we use <b>React</b> with
+                            <b>Typescript</b>.
+                        </p>
+                        <p class="paragraph-text">It is my belief that React is often not the best choice. A lot of
+                            websites and products would be better of using a lightweight system like HTMX, instead.
+                            However when it comes to complex systems with a lot of interactivity, bulkier component
+                            based frameworks like React become useful. Our application has a highly complex user
+                            interface with a lot of interactivity. There are a lot of menus, sub menus, settings,
+                            builders, toggles, and more.</p>
+                        <p class="paragraph-text">The choice for using <b>typescript</b> instead of plain JS was simple,
+                            reliability. Having types allows a higher degree of code reliability, ability to catch bugs
+                            early, and the extra benefit of auto complete from having defined types improves the dev
+                            experience and speed.</p>
+                    </article>
+                    <aside id="toc">
+                        <nav>
+                            <ul id="toc-list">
+                                <!--javascript-->
+                            </ul>
+                        </nav>
+                    </aside>
+                </div>
+
+
+            </section>
+
+            <!--Stay in Touch-->
+            <section id="design-projects-section" class="page-section">
                 <header id="contact-header" class="page-section-header">
-                    <img class="page-section-header-image" src="../assets/icons/speech_bubble.svg"
-                        alt="Contact Icon" />
+                    <img class="page-section-header-image" src="../assets/icons/speech_bubble.svg" alt="Contact Icon" />
                     <h2 class="page-section-header-text heading-text">Stay In Touch</h2>
                 </header>
 
@@ -107,7 +350,7 @@
                     <div class="footer-column">
                         <h2 class="heading-text">Check out my CV</h2>
                         <div id="footer-buttons">
-                            <a href="cv.html" class="footer-button" aria-label="See CV">
+                            <a href="/cv.html" class="footer-button" aria-label="See CV">
                                 <img src="../assets/icons/navigate.svg" alt="CV icon" />
                                 <span class="small-text">CV</span>
                             </a>
