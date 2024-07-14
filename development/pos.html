@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Point of Sale - Maciej Clanet Portfolio</title>
 
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/development.css">
@@ -16,9 +16,16 @@
     <script src="../scripts/navigation.js" defer></script>
     <script src="../scripts/contact.js" defer></script>
     <script src="../scripts/projectnav.js" defer></script>
+    <script src="../scripts/themes.js" defer></script>
+
+
+    <meta name="description" content="Detailed view of the Point of Sale startup by Maciej Clanet.">
+    <meta name="keywords" content="Point of Sale, pos, project, portfolio, Maciej Clanet, web development, design, fullstack, frontend, backend, react, rust">
+    <meta name="author" content="Maciej Clanet">
+    <meta name="robots" content="index, follow">
 </head>
 
-<body>
+<body class="dark-theme">
     <header id="side-bar-header">
         <div id="header-profile-container">
             <img id="header-profile-image" src="../assets/profile_image_large.png"
@@ -64,6 +71,10 @@
                 </a>
             </div>
         </nav>
+        <button id="theme-toggle" class="nav-button">
+            <img id="theme-toggle-icon" src="../assets/icons/sun.svg" alt="sun icon for light mode"/>
+            <span id="theme-toggle-text" >Switch to light mode</span>
+        </button>
     </header>
 
     <main id="main-container">

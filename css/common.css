@@ -5,6 +5,12 @@
     box-sizing: border-box;
     padding: 0;
 
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dark-theme{
     --text-col: #D6D7FB;
     --background-col: #04031C;
     --accent-col: #4DEB45;
@@ -16,10 +22,28 @@
     --transparent-blue-light: rgba(104, 105, 168, 0.15);
     --danger-100: #FD4D4D;
     --success-100: #89f284;
+    --gradient-1-start: rgba(151, 71, 255, 0.2);
+    --gradient-1-end: rgba(151, 71, 255, 0);
+    --gradient-2-start: rgba(128, 216, 243, 0.2);
+    --gradient-2-end: rgba(128, 216, 243, 0);
+}
 
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+.light-theme{
+    --text-col: rgb(8, 3, 25);
+    --background-col: #aeacf0;
+    --accent-col: #4DEB45;
+    --background-alt: #a192f5;
+    --background-light: #c5c2f8;
+    --text-col-dark: #151515;
+    --primary-col: #5450c3;
+    --transparent-blue: rgba(241, 251, 255, 0.9);
+    --transparent-blue-light: rgba(255, 255, 255, 0.4);
+    --danger-100: #FD4D4D;
+    --success-100: #89f284;
+    --gradient-1-start: rgba(255, 255, 255, 0.5);
+    --gradient-1-end: rgba(255, 255, 255, 0);
+    --gradient-2-start: rgba(97, 250, 255, 0.5);
+    --gradient-2-end: rgba(128, 216, 243, 0);
 }
 
 body {
@@ -64,6 +88,7 @@ body {
 #nav-button-groups-container {
     display: flex;
     flex-direction: column;
+    height: 100%;
     gap: 16px;
 }
 
@@ -109,6 +134,18 @@ body {
         box-shadow: 0px 2px 4px 0px rgba(193, 207, 245, 0.2);
         ;
     }
+}
+
+#theme-toggle{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    margin-top: auto;
+    background-color: var(--transparent-blue-light);
+    border: none;
+    border-radius: 4px;
+    cursor:pointer;
 }
 
 .nav-button-label {
@@ -164,8 +201,8 @@ body {
     border-radius: 16px 0px 0px 0px;
 
     background: 
-    radial-gradient(circle at -15% -50%, rgba(151, 71, 255, 0.2) 0%, rgba(151, 71, 255, 0) 100%),
-    radial-gradient(circle at 120% 120%, rgba(128, 216, 243, 0.2) 0%, rgba(128, 216, 243, 0) 100%);
+    radial-gradient(circle at -15% -50%, var(--gradient-1-start) 0%, var(--gradient-1-end) 100%),
+    radial-gradient(circle at 120% 120%, var(--gradient-2-start) 0%, var(--gradient-2-end) 100%);
     background-size: 100%;
     background-blend-mode: normal;
     overflow: hidden;
@@ -213,6 +250,7 @@ body {
     font-size: 16px;
     font-weight: 450;
     letter-spacing: 2%;
+    line-height: 1.5;
     color: var(--text-col-dark);
 }
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact - Maciej Clanet Portfolio</title>
 
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -15,9 +15,15 @@
 
     <script src="./scripts/navigation.js" defer></script>
     <script src="./scripts/contact.js" defer></script>
+    <script src="./scripts/themes.js" defer></script>
+
+    <meta name="description" content="Get in touch with Maciej Clanet through the contact page.">
+    <meta name="keywords" content="contact, Maciej Clanet, portfolio, web developer, designer, fullstack, frontend, backend, react, rust, typescript">
+    <meta name="author" content="Maciej Clanet">
+    <meta name="robots" content="index, follow">
 </head>
 
-<body>
+<body class="dark-theme">
     <header id="side-bar-header">
         <div id="header-profile-container">
             <img id="header-profile-image" src="./assets/profile_image_large.png" alt="Profile image of Maciej Clanet" />
@@ -62,6 +68,10 @@
                 </a>
             </div>
         </nav>
+        <button id="theme-toggle" class="nav-button">
+            <img id="theme-toggle-icon" src="./assets/icons/sun.svg" alt="sun icon for light mode"/>
+            <span id="theme-toggle-text" >Switch to light mode</span>
+        </button>
     </header>
 
     <main id="main-container">
