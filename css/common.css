@@ -146,6 +146,7 @@ body {
     border: none;
     border-radius: 4px;
     cursor:pointer;
+
 }
 
 .nav-button-label {
@@ -182,6 +183,14 @@ body {
     }
     .nav-button src{
         align-self: center;
+    }
+
+    #theme-toggle{
+        justify-content: center;
+    }
+
+    #theme-toggle-text{
+        display: none;
     }
 
 }

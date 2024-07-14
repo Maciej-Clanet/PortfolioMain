@@ -1,7 +1,8 @@
 #project-tabs{
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    column-gap: 32px;
+    row-gap: 8px;
     padding: 64px 0px 32px 0px;
 }
 .tab-button{
@@ -143,7 +144,22 @@ nav ul li a.active {
         content: " - - - ";
     } */
 }
+.article-image-row {
+    display: flex;
+    gap: 8px;
+    max-height: 400px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+}
 
+.article-image-inrow {
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
 
 .article-image-below{
     margin-top: 16px;

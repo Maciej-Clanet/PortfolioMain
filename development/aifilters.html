@@ -1,11 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ai Filter App - Maciej Clanet Portfolio</title>
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/development.css">
+    <link rel="stylesheet" href="../css/simplebanner.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/projectthumbnail.css">
+    <link rel="stylesheet" href="../css/projectpage.css">
+
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="../scripts/contact.js" defer></script>
+    <script src="../scripts/projectnav.js" defer></script>
+    <script src="../scripts/themes.js" defer></script>
+
+
+    <meta name="description" content="Detailed view of the AI filter web app by Maciej Clanet.">
+    <meta name="keywords"
+        content="AI,filters, project, portfolio, Maciej Clanet, web development, design, fullstack, frontend, backend, react, rust">
+    <meta name="author" content="Maciej Clanet">
+    <meta name="robots" content="index, follow">
 </head>
+
 <body class="dark-theme">
-    aifilter app
+    <header id="side-bar-header">
+        <div id="header-profile-container">
+            <img id="header-profile-image" src="../assets/profile_image_large.png"
+                alt="Profile image of Maciej Clanet" />
+            <span id="header-profile-label">Maciej Clanet</span>
+        </div>
+        <nav id="nav-button-groups-container" aria-label="Main Navigation">
+            <div class="nav-button-group">
+                <a href="../index.html" class="nav-button" title="Home">
+                    <img src="../assets/icons/home.svg" alt="home icon" />
+                    <span class="nav-button-label">Home</span>
+                    <span class="nav-button-key-label">1</span>
+                </a>
+                <a href="../about.html" class="nav-button">
+                    <img src="../assets/icons/person.svg" alt="about icon" title="About" />
+                    <span class="nav-button-label">About</span>
+                    <span class="nav-button-key-label">2</span>
+                </a>
+                <a href="../development.html" class="nav-button active">
+                    <img src="../assets/icons/code.svg" alt="projects icon" title="Development Projects" />
+                    <span class="nav-button-label">Dev Projects</span>
+                    <span class="nav-button-key-label">3</span>
+                </a>
+                <a href="../design.html" class="nav-button">
+                    <img src="../assets/icons/pencil.svg" alt="design icon" title="Design Projects" />
+                    <span class="nav-button-label">Design Projects</span>
+                    <span class="nav-button-key-label">4</span>
+                </a>
+            </div>
+            <div class="nav-button-group">
+                <div class="nav-button-group-label">
+                    Stay In Touch
+                </div>
+                <a href="../cv.html" class="nav-button" title="Cirriculum Vitae">
+                    <img src="../assets/icons/file.svg" alt="cv icon" />
+                    <span class="nav-button-label">CV</span>
+                    <span class="nav-button-key-label">5</span>
+                </a>
+                <a href="../contact.html" class="nav-button" title="Contact">
+                    <img src="../assets/icons/speech_bubble.svg" alt="contact icon" />
+                    <span class="nav-button-label">Contact</span>
+                    <span class="nav-button-key-label">6</span>
+                </a>
+            </div>
+        </nav>
+        <button id="theme-toggle" class="nav-button">
+            <img id="theme-toggle-icon" src="../assets/icons/sun.svg" alt="sun icon for light mode" />
+            <span id="theme-toggle-text">Switch to light mode</span>
+        </button>
+    </header>
+
+    <main id="main-container">
+        <div id="main-content">
+
+            <div id="banner">
+                <div id="banner-main">
+                    <img id="banner-image" src="../assets/profile_image_large.png"
+                        alt="Profile photo of maciej clanet" />
+                    <h1 id="banner-text">Check these out!</h1>
+                </div>
+            </div>
+
+            <section id="project-tabs">
+                <a class="tab-button small-text" href="../development/pos.html">POSperity - Point of Sale</a>
+                <a class="tab-button small-text active" href="../development/aifilters.html">AI Filter App</a>
+            </section>
+
+            <section id="project-section">
+                <header id="project-header">
+                    <h1 class="heading-text">AI Filter App</h2>
+                        <div class="project-subheading-table">
+                            <div class="small-text">Purpose</div>
+                            <div class="small-text">Personal Project</div>
+                            <div class="small-text">Tech</div>
+                            <div class="small-text">React, FastAPI, Stable Difussion, Websockets</div>
+                        </div>
+                </header>
+                <div id="article-container">
+                    <article id="project-main">
+                        <img class="article-image-below" src="../assets/articles/aifilters/AppProcessing.png"
+                            alt="Point of sale take order screen" />
+                        <h2 id="Project_Overview" class="heading-text article-heading">Project Overview</h2>
+                        <p class="paragraph-text">
+                            I like AI and enjoy playing around with it. I have been experimenting with stable diffusion,
+                            and at one point I thought to myself, "Hey, if I could run the prompts and settings
+                            dynamically, this would be a very good way of creating an AI filter app.".</p>
+                        <p>Well, it turns out stable diffusion can run in API mode! And so I quickly designed the app
+                            and started implementing it using <b>React</b> for the frontend and <b>FastAPI</b> for the
+                            backend.</p>
+                        </p>
+                        <br>
+                        <p>This project was more about curiosity than trying to bring it to completion.</p>
+                        <p>I succeeded in getting the core functionality working; the filters work! The user is able to:
+                        </p>
+                        <ul>
+                            <li>Upload an image (or take a new one from the phone camera).</li>
+                            <li>Select filter</li>
+                            <li>Send it to processing.</li>
+                            <li>Receive the image with the filter applied.</li>
+                            <li>Save the image.</li>
+                        </ul>
+                        <h2 id="About_Filters" class="heading-text article-heading">About the Filters</h2>
+                        <p class="paragraph-text">Currently, the app only has one filter, one that "manifies" the user
+                            of the app.</p>
+                        <p class="paragraph-text">While there is currently only one selectable filter, <b>the system for
+                                more filters is already in place and working</b>, including filter settings (for
+                            example, the strength of the "manlification").</p>
+                        <p>It is trivial for me to add more filters; each filter is a simple Python file that sets the
+                            right settings, prompts, and control-nets.</p>
+
+                        <h2 id="Queue" class="heading-text article-heading">The Queue System</h2>
+                        <p>It takes time to process an image (about 4 seconds). Because of that, the user won’t receive
+                            the image right away. There might also be other users attempting to generate an image at the
+                            same time. Because of this, I have included a queue system. When the user sends an image, a
+                            websocket connection is created. The use gets put on a standard or priority queue, depending
+                            on their account type. The websocket updates the user on how many users are ahead of them in
+                            the queue, until eventually it's their turn and the finished image gets sent to the user.
+                        </p>
+
+                        <h2 id="Considerations" class="heading-text article-heading">Important Considerations</h2>
+
+                        <h3 id="Safety" class="paragraph-text article-subheading">Safety</h3>
+                        <p class="paragraph-text">AI filters through local instances can be tricky to use, especially
+                            when using publicly available models. Because of this, I had to do some safety testing on
+                            the filter and would have to do so for any future filters I would plan to add.</p>
+                        <p>Considering the audience of an application of this type, I had to really make sure the model
+                            and trained Lora I use for the filter will never create anything unsafe for work, a risk
+                            that's often present even with the most innocent of prompts when using public models. </p>
+                        <p>Luckily, it never did. The base model I chose is not meant for this kind of image in the
+                            first place, which makes it quite safe to use. Furthermore, even though it wasn't needed, I
+                            decided to add a lot of keywords to the negative prompt that would further help avoid such
+                            issues.</p>
+
+                        <h3 id="Business" class="paragraph-text article-subheading">Business</h3>
+                        <p class="paragraph-text">
+                            While I never intended to make this app into a commercial project, I always approach the
+                            design with the consideration of it potentially becoming so in the future.</p>
+                        <p class="paragraph-text">The business consideration of this project was <b>operational
+                                costs</b>,
+                            mainly the cost of <b>GPU time</b>. While I can process the images on my personal computer
+                            in less
+                            than 4 seconds, it would not be ideal to do so for production. Furthermore, to offer a
+                            <b>priority queue</b> for paid users, I would need to be able to run two queues at the same
+                            time,
+                            which I cannot do locally with just one GPU.
+                        </p>
+                        <p class="paragraph-text">To fix this issue for production, I would need to use a service that
+                            offers GPU time, such as "Hugging Face." These services offer multiple plans with different
+                            tiers of GPU. They also allow for scaling usage depending on needs, which could be a very
+                            useful feature if the application ever gets popular.</p>
+
+
+                        <h2 id="Lessons" class="heading-text article-heading">Lessons Learned</h2>
+                        <p class="paragraph-text">There is one choice I regret to have made in the design process of
+                            this app: the tech stack. With the current tech stack, I do not have the ability to access
+                            user files. This means that I can't save the final images to the user device automatically,
+                            and I can't retrieve them for a “gallery” feature. To fix this, I would need to use online
+                            hosting like Firebase, which could become costly over time to store a lot of images.</p>
+                        <p class="paragraph-text">If I were to attempt this project again, I would use a tech stack
+                            meant for mobile applications. Dioxus, in particular, caught my eye. It's a Rust library for
+                            creating web, desktop, and mobile applications. It works very similarly to React, and most
+                            importantly, the same codebase can be used to deploy to the web, desktop, and mobile, which
+                            gives me the ability to interact with the user's storage for the gallery feature.</p>
+
+                        <h2 id="Outputs" class="heading-text article-heading">Output Examples</h2>
+                        <div class="article-image-row">
+                            <div>
+                                <img class="article-image-inrow" src="../assets/articles/aifilters/filterBefore1.png"
+                                    alt="Maciej before manlify filter applied" />
+                            </div>
+
+                            <div>
+                                <img class="article-image-inrow" src="../assets/articles/aifilters/filterAfter1.png"
+                                    alt="Maciej after manlify filter applied" />
+                            </div>
+                        </div>
+                        <div class="article-image-row">
+                            <div>
+                                <img class="article-image-inrow" src="../assets/articles/aifilters/filterBefore2.png"
+                                    alt="Joe before manlify filter applied" />
+                            </div>
+                            <div>
+                                <img class="article-image-inrow" src="../assets/articles/aifilters/filterAfter2.png"
+                                    alt="Joe after manlify filter applied" />
+                            </div>
+                        </div>
+                    </article>
+                    <aside id="toc">
+                        <nav>
+                            <ul id="toc-list">
+                                <!--javascript-->
+                            </ul>
+                        </nav>
+                    </aside>
+                </div>
+
+
+            </section>
+
+            <!--Stay in Touch-->
+            <section id="design-projects-section" class="page-section">
+                <header id="contact-header" class="page-section-header">
+                    <img class="page-section-header-image" src="../assets/icons/speech_bubble.svg" alt="Contact Icon" />
+                    <h2 class="page-section-header-text heading-text">Stay In Touch</h2>
+                </header>
+
+                <footer id="footer-container">
+                    <div class="footer-column">
+                        <h2 class="heading-text">Looking to hire?</h2>
+
+                        <div id="footer-email-container">
+                            <span class="small-text">Email</span>
+                            <span id="email-text" class="small-text">maciejclanet@gmail.com</span>
+                        </div>
+
+                        <div id="footer-email-buttons">
+                            <button id="compose-button" aria-label="Compose email">
+                                <img src="../assets/icons/compose.svg" alt="compose email icon" />
+                                <span class="small-text">Compose</span>
+                            </button>
+                            <button id="copy-button" aria-label="Copy email address">
+                                <img src="../assets/icons/copy.svg" alt="copy email icon" />
+                                <span class="small-text">Copy</span>
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h2 class="heading-text">Check out my CV</h2>
+                        <div id="footer-buttons">
+                            <a href="../cv.html" class="footer-button" aria-label="See CV">
+                                <img src="../assets/icons/navigate.svg" alt="CV icon" />
+                                <span class="small-text">CV</span>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </footer>
+            </section>
+
+        </div>
+        <div id="notification-container"></div>
+    </main>
 </body>
+
 </html>
