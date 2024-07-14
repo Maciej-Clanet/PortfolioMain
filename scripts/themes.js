@@ -3,8 +3,18 @@ const toggle = document.getElementById("theme-toggle");
 const toggleIcon = document.getElementById("theme-toggle-icon");
 const toggleText = document.getElementById("theme-toggle-text");
 
+function getBasePath() {
+    const depth = window.location.pathname.split('/').length - 1;
+    let basePath = './';
+    for (let i = 1; i < depth; i++) {
+        basePath += '../';
+    }
+    basePath += 'assets/icons/';
+    return basePath;
+}
 
-let basePath =  "./assets/icons/";
+
+let basePath =  getBasePath();
 if( window.location.pathname.includes('/development') ||  window.location.pathname.includes('/design')){
     basePath = "../assets/icons/"
 }
