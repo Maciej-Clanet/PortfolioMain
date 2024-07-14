@@ -3,13 +3,15 @@ document.addEventListener('keydown', function(event) {
     // Check if the key pressed is a number key between 1 and 6
     if (event.key >= '1' && event.key <= '6') {
         // Define an array of URLs corresponding to the number keys
+
+        const baseURL = window.location.hostname === 'maciej-clanet.github.io' ? '/PortfolioMain' : '';
         const urls = [
-            '/home.html',    // 1
-            '/about.html',   // 2
-            '/development.html', // 3
-            '/design.html',  // 4
-            '/cv.html',      // 5
-            '/contact.html'  // 6
+            `${baseURL}/index.html`,    // 1
+            `${baseURL}/about.html`,   // 2
+            `${baseURL}/development.html`, // 3
+            `${baseURL}/design.html`,  // 4
+            `${baseURL}/cv.html`,      // 5
+            `${baseURL}/contact.html`  // 6
         ];
 
 
