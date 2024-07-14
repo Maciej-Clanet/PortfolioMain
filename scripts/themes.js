@@ -6,14 +6,18 @@ const toggleText = document.getElementById("theme-toggle-text");
 // Function to get the correct base path
 function getBasePath() {
     const path = window.location.pathname;
-    const depth = path.split('/').length - 2; // Adjust for depth in the path
     let basePath = '';
-    
-    for (let i = 0; i < depth; i++) {
-        basePath += '../';
+
+    // Adjust the path based on the current location
+    if (path.includes('/development/') || path.includes('/design/')) {
+        basePath = '../assets/icons/';
+    } else if (path === '/PortfolioMain/' || path === '/PortfolioMain/index.html') {
+        basePath = './assets/icons/';
+    } else {
+        basePath = './assets/icons/';
     }
 
-    return basePath + 'assets/icons/';
+    return basePath;
 }
 
 let basePath =  getBasePath();
