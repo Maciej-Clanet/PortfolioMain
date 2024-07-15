@@ -218,3 +218,9 @@ nav ul li a.active {
         display: none;
     }
 }
+
+@media (max-height: 500px){
+    aside#toc{
+        display: none;
+    }
+}

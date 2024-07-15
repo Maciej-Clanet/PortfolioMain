@@ -421,11 +421,20 @@ body.light-theme #theme-toggle img{
     .nav-button-group-label{
         display: none;
     }
+
+    #side-bar-header{
+        padding-bottom: 8px
+    }
+
+    #main-container{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
  }
 
  @media (max-height: 420px){
     #side-bar-header{
-        padding-top: 16px;
+        padding-top: 16px;;
     }
     #nav-button-groups-container, .nav-button-group{
         gap: 4px;
