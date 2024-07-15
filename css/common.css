@@ -58,10 +58,13 @@ body {
     background-color: var(--background-alt);
 }
 
+
+
 /*Main Side Header / Navigation*/
 #side-bar-header {
     min-height: 100vh;
     padding: 32px 16px;
+    padding-bottom: 64px;
 
     display: flex;
     flex-direction: column;
@@ -116,6 +119,7 @@ body {
 .nav-button {
     display: flex;
     align-items: center;
+    justify-content: center;
 
     gap: 8px;
     padding: 8px;
@@ -193,6 +197,7 @@ body.light-theme #theme-toggle img{
         display: none;
     }
     .nav-button-key-label{
+        display: none;
         justify-self: flex-end;
         margin-left: auto;
     }
@@ -378,3 +383,56 @@ body.light-theme #theme-toggle img{
         flex-direction: column;
     }
 }
+
+
+/* @media (max-height: 500px){
+    body{
+        flex-direction: column;
+    }
+    #side-bar-header{
+        flex-direction: row;
+    }
+    #header-profile-container{
+        display: flex;
+    }
+    #header-profile-label{
+        text-wrap: nowrap;
+    }
+    #nav-button-groups-container{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .nav-button-group{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-button-group-label{
+        display: none;
+    }
+    #theme-toggle{
+        margin: 0;
+    }
+} */
+ @media (max-height: 500px){
+    #header-profile-container{
+        display: none;
+    }
+    .nav-button-group-label{
+        display: none;
+    }
+ }
+
+ @media (max-height: 420px){
+    #side-bar-header{
+        padding-top: 16px;
+    }
+    #nav-button-groups-container, .nav-button-group{
+        gap: 4px;
+    }
+ }
+ @media (max-height: 350px){
+    #nav-button-groups-container, .nav-button-group{
+        gap: 0px;
+    }
+ }
